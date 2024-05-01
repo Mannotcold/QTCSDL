@@ -45,13 +45,7 @@ namespace QTCSDLHD
             
         }
 
-        // lấy ConnectString với mỗi loại user
-        public static string get_ConnectString(string tendangnhap, string matkhau)
-        {
-            string s = "";
-            s = "Data Source=.;Initial Catalog=DOANHQT;User ID=" + tendangnhap + ";Password=" + matkhau + "";
-            return s;
-        }
+        
 
         public static IDatabase GetDatabase()
         {

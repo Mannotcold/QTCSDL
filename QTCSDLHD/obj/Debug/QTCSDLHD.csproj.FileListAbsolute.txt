@@ -23,7 +23,6 @@ E:\C#\QTCSDLHD\bin\Debug\System.Numerics.Vectors.xml
 E:\C#\QTCSDLHD\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 E:\C#\QTCSDLHD\bin\Debug\System.Threading.Tasks.Extensions.xml
 E:\C#\QTCSDLHD\obj\Debug\QTCSDLHD.csproj.AssemblyReference.cache
-E:\C#\QTCSDLHD\obj\Debug\QTCSDLHD.Form1.resources
 E:\C#\QTCSDLHD\obj\Debug\QTCSDLHD.Properties.Resources.resources
 E:\C#\QTCSDLHD\obj\Debug\QTCSDLHD.csproj.GenerateResource.cache
 E:\C#\QTCSDLHD\obj\Debug\QTCSDLHD.csproj.CoreCompileInputs.cache
@@ -42,3 +41,7 @@ E:\C#\QTCSDLHD\bin\Debug\System.IO.Pipelines.xml
 E:\C#\QTCSDLHD\bin\Debug\System.Threading.Channels.xml
 E:\C#\QTCSDLHD\obj\Debug\QTCSDLHD.Login.resources
 E:\C#\QTCSDLHD\obj\Debug\QTCSDLHD.Register.resources
+E:\C#\QTCSDLHD\bin\Debug\Guna.UI2.dll
+E:\C#\QTCSDLHD\obj\Debug\QTCSDLHD.FormLogin.resources
+E:\C#\QTCSDLHD\obj\Debug\QTCSDLHD.Menu.resources
+E:\C#\QTCSDLHD\obj\Debug\QTCSDLHD.TimChuyenXe.resources

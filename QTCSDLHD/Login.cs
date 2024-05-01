@@ -19,14 +19,16 @@ namespace QTCSDLHD
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        
+
+        private void btntc_Click(object sender, EventArgs e)
         {
             RedisFunctions.Connect();
             try
             {
                 // Lấy dữ liệu từ TextBox hoặc một control khác trong giao diện của bạn
-                string username = textBox1.Text;
-                string password = textBox3.Text;
+                string username = txtBox_tendangnhap.Text;
+                string password = txtBox_matkhau.Text;
 
                 // Tạo một instance của database Redis
                 IDatabase db = RedisFunctions.GetDatabase();
@@ -38,6 +40,10 @@ namespace QTCSDLHD
                 if (storedPassword == password)
                 {
                     MessageBox.Show("Login successful.");
+                    Form form = new Menu();
+                    this.Hide();
+                    form.ShowDialog();
+                    this.Close();
                 }
                 else
                 {
@@ -48,14 +54,6 @@ namespace QTCSDLHD
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-        }
-
-        private void dk_Click(object sender, EventArgs e)
-        {
-            Form form = new Register();
-            this.Hide();
-            form.ShowDialog();
-            this.Close();
         }
     }
 }

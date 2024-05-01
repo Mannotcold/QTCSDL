@@ -18,19 +18,19 @@ namespace QTCSDLHD
             InitializeComponent();
         }
 
-        private void DK_Click(object sender, EventArgs e)
+        private void btndk_Click(object sender, EventArgs e)
         {
             RedisFunctions.Connect();
             try
             {
                 // Lấy dữ liệu từ TextBox hoặc một control khác trong giao diện của bạn
-                string dataToAdd = textBox1.Text;
+                string dataToAdd = txtBox_tendangnhap.Text;
 
                 // Tạo một instance của database Redis
                 IDatabase db = RedisFunctions.GetDatabase();
 
                 // Thêm dữ liệu vào Redis với một key cụ thể
-                db.StringSet(textBox3.Text, dataToAdd);
+                db.StringSet(txtBox_matkhau.Text, dataToAdd);
 
                 MessageBox.Show("Data added to Redis successfully.");
             }
