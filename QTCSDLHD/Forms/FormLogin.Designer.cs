@@ -30,7 +30,6 @@ namespace QTCSDLHD
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btndk = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btndn = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -116,7 +115,7 @@ namespace QTCSDLHD
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.Image = global::QTCSDLHD.Properties.Resources.dn;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.InitialImage = null;
             this.guna2PictureBox2.Location = new System.Drawing.Point(3, -75);
