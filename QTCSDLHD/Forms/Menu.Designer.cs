@@ -82,6 +82,7 @@ namespace QTCSDLHD
             this.btntc.Size = new System.Drawing.Size(157, 45);
             this.btntc.TabIndex = 69;
             this.btntc.Text = "Trang chủ";
+            this.btntc.Click += new System.EventHandler(this.btntc_Click);
             // 
             // guna2GradientButton1
             // 

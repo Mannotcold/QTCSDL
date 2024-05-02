@@ -12,9 +12,14 @@ namespace QTCSDLHD
 {
     public partial class Menu : Form
     {
-        public Menu()
+
+        string SĐT;
+        string MK;
+        public Menu(string sdt, string mk)
         {
             InitializeComponent();
+            SĐT = sdt;
+            MK = mk;
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
@@ -45,6 +50,11 @@ namespace QTCSDLHD
         private void Menu_Load(object sender, EventArgs e)
         {
             openChildForm(new TimChuyenXe());
+        }
+
+        private void btntc_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

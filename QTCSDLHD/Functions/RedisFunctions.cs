@@ -17,22 +17,22 @@ namespace QTCSDLHD
         // server chính xác
         private static ConnectionMultiplexer redis;
 
-
+        
 
         public static void Connect()
         {
             redis = ConnectionMultiplexer.Connect("localhost:6379");
             try
             {
-                // Kiểm tra xem kết nối đã được thiết lập thành công hay không
-                if (redis.IsConnected)
-                {
-                    MessageBox.Show("Connected to Redis");
-                }
-                else
-                {
-                    MessageBox.Show("Failed to connect to Redis");
-                }
+                //// Kiểm tra xem kết nối đã được thiết lập thành công hay không
+                //if (redis.IsConnected)
+                //{
+                //    MessageBox.Show("Connected to Redis");
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Failed to connect to Redis");
+                //}
             }
             catch (Exception ex)
             {

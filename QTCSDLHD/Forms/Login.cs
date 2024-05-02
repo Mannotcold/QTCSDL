@@ -40,7 +40,7 @@ namespace QTCSDLHD
                 if (storedPassword == password)
                 {
                     MessageBox.Show("Login successful.");
-                    Form form = new Menu();
+                    Form form = new Menu(username, password);
                     this.Hide();
                     form.ShowDialog();
                     this.Close();
