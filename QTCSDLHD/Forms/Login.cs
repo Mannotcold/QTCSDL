@@ -41,9 +41,11 @@ namespace QTCSDLHD
                 {
                     MessageBox.Show("Login successful.");
                     Form form = new Menu(username, password);
-                    this.Hide();
+                    // Lấy tham chiếu tới form cha
+                    
                     form.ShowDialog();
-                    this.Close();
+
+
                 }
                 else
                 {

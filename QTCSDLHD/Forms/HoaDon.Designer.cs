@@ -29,8 +29,8 @@ namespace QTCSDLHD
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvhd = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.btntim = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -50,23 +50,23 @@ namespace QTCSDLHD
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvhd.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvhd.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvhd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvhd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvhd.ColumnHeadersHeight = 35;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvhd.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvhd.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvhd.EnableHeadersVisualStyles = false;
             this.dgvhd.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvhd.Location = new System.Drawing.Point(23, 162);
@@ -74,7 +74,7 @@ namespace QTCSDLHD
             this.dgvhd.Name = "dgvhd";
             this.dgvhd.ReadOnly = true;
             this.dgvhd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvhd.Size = new System.Drawing.Size(789, 363);
+            this.dgvhd.Size = new System.Drawing.Size(1123, 497);
             this.dgvhd.TabIndex = 106;
             // 
             // label6
@@ -104,7 +104,7 @@ namespace QTCSDLHD
             this.btntim.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btntim.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btntim.ForeColor = System.Drawing.Color.Black;
-            this.btntim.Location = new System.Drawing.Point(658, 108);
+            this.btntim.Location = new System.Drawing.Point(419, 110);
             this.btntim.Name = "btntim";
             this.btntim.Size = new System.Drawing.Size(141, 36);
             this.btntim.TabIndex = 103;
@@ -115,10 +115,10 @@ namespace QTCSDLHD
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(183, 82);
+            this.label2.Location = new System.Drawing.Point(265, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 21);
             this.label2.TabIndex = 98;
@@ -128,7 +128,8 @@ namespace QTCSDLHD
             // 
             this.txtmahd.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtmahd.Animated = true;
-            this.txtmahd.BorderColor = System.Drawing.Color.White;
+            this.txtmahd.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtmahd.BorderColor = System.Drawing.Color.Black;
             this.txtmahd.BorderRadius = 6;
             this.txtmahd.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtmahd.DefaultText = "";
@@ -140,7 +141,7 @@ namespace QTCSDLHD
             this.txtmahd.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtmahd.ForeColor = System.Drawing.Color.Black;
             this.txtmahd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtmahd.Location = new System.Drawing.Point(34, 108);
+            this.txtmahd.Location = new System.Drawing.Point(142, 108);
             this.txtmahd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtmahd.Name = "txtmahd";
             this.txtmahd.PasswordChar = '\0';
@@ -154,10 +155,10 @@ namespace QTCSDLHD
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(31, 82);
+            this.label1.Location = new System.Drawing.Point(139, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 21);
             this.label1.TabIndex = 96;
@@ -170,7 +171,7 @@ namespace QTCSDLHD
             this.Date.CustomFormat = "dd/MM/yyyy";
             this.Date.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Date.Location = new System.Drawing.Point(187, 106);
+            this.Date.Location = new System.Drawing.Point(269, 106);
             this.Date.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.Date.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.Date.Name = "Date";
@@ -182,7 +183,8 @@ namespace QTCSDLHD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 543);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(1159, 677);
             this.Controls.Add(this.Date);
             this.Controls.Add(this.dgvhd);
             this.Controls.Add(this.label6);

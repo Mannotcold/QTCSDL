@@ -32,9 +32,9 @@ namespace QTCSDLHD
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btntc = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnhd = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnqltt = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btninfo = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.SuspendLayout();
             // 
@@ -84,68 +84,69 @@ namespace QTCSDLHD
             this.btntc.Text = "Trang chủ";
             this.btntc.Click += new System.EventHandler(this.btntc_Click);
             // 
-            // guna2GradientButton1
+            // btnhd
             // 
-            this.guna2GradientButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.BorderRadius = 10;
-            this.guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(385, 120);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(159, 45);
-            this.guna2GradientButton1.TabIndex = 70;
-            this.guna2GradientButton1.Text = "Lịch trình";
+            this.btnhd.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnhd.Animated = true;
+            this.btnhd.BorderRadius = 10;
+            this.btnhd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnhd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnhd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnhd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnhd.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnhd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnhd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnhd.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnhd.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnhd.ForeColor = System.Drawing.Color.Black;
+            this.btnhd.Location = new System.Drawing.Point(385, 120);
+            this.btnhd.Name = "btnhd";
+            this.btnhd.Size = new System.Drawing.Size(159, 45);
+            this.btnhd.TabIndex = 70;
+            this.btnhd.Text = "Hóa đơn";
+            this.btnhd.Click += new System.EventHandler(this.btnhd_Click);
             // 
-            // guna2GradientButton2
+            // btnqltt
             // 
-            this.guna2GradientButton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2GradientButton2.Animated = true;
-            this.guna2GradientButton2.BorderRadius = 10;
-            this.guna2GradientButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(649, 120);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.Size = new System.Drawing.Size(158, 45);
-            this.guna2GradientButton2.TabIndex = 71;
-            this.guna2GradientButton2.Text = "Quản lý thông tin";
+            this.btnqltt.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnqltt.Animated = true;
+            this.btnqltt.BorderRadius = 10;
+            this.btnqltt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnqltt.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnqltt.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnqltt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnqltt.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnqltt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnqltt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnqltt.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnqltt.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnqltt.ForeColor = System.Drawing.Color.Black;
+            this.btnqltt.Location = new System.Drawing.Point(649, 120);
+            this.btnqltt.Name = "btnqltt";
+            this.btnqltt.Size = new System.Drawing.Size(158, 45);
+            this.btnqltt.TabIndex = 71;
+            this.btnqltt.Text = "Quản lý thông tin";
             // 
-            // guna2GradientButton3
+            // btninfo
             // 
-            this.guna2GradientButton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2GradientButton3.Animated = true;
-            this.guna2GradientButton3.BorderRadius = 10;
-            this.guna2GradientButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2GradientButton3.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(911, 120);
-            this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.Size = new System.Drawing.Size(156, 45);
-            this.guna2GradientButton3.TabIndex = 72;
-            this.guna2GradientButton3.Text = "Về chúng tôi";
+            this.btninfo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btninfo.Animated = true;
+            this.btninfo.BorderRadius = 10;
+            this.btninfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btninfo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btninfo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btninfo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btninfo.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btninfo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btninfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btninfo.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btninfo.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btninfo.ForeColor = System.Drawing.Color.Black;
+            this.btninfo.Location = new System.Drawing.Point(911, 120);
+            this.btninfo.Name = "btninfo";
+            this.btninfo.Size = new System.Drawing.Size(156, 45);
+            this.btninfo.TabIndex = 72;
+            this.btninfo.Text = "Về chúng tôi";
             // 
             // guna2Panel1
             // 
@@ -165,9 +166,9 @@ namespace QTCSDLHD
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1177, 778);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.guna2GradientButton3);
-            this.Controls.Add(this.guna2GradientButton2);
-            this.Controls.Add(this.guna2GradientButton1);
+            this.Controls.Add(this.btninfo);
+            this.Controls.Add(this.btnqltt);
+            this.Controls.Add(this.btnhd);
             this.Controls.Add(this.btntc);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
@@ -184,9 +185,9 @@ namespace QTCSDLHD
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2GradientButton btntc;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
+        private Guna.UI2.WinForms.Guna2GradientButton btnhd;
+        private Guna.UI2.WinForms.Guna2GradientButton btnqltt;
+        private Guna.UI2.WinForms.Guna2GradientButton btninfo;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }

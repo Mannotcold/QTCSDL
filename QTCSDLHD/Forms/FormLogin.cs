@@ -19,8 +19,14 @@ namespace QTCSDLHD
         // mở 1 form con
         private Form activeform = null;
 
-        private void openChildForm(Form childForm)
+        private void openChildForm(Form childForm, Form parentForm)
         {
+            if (childForm == null)
+            {
+                // Xử lý trường hợp childForm là null
+                return;
+            }
+
             if (activeform != null)
             {
                 activeform.Close();
@@ -31,7 +37,13 @@ namespace QTCSDLHD
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
 
-            guna2Panel3.Controls.Clear(); // Xóa tất cả các controls hiện tại trong panel trước khi thêm form con mới
+            if (guna2Panel3 == null)
+            {
+                // Xử lý trường hợp guna2Panel3 là null
+                return;
+            }
+
+            guna2Panel3.Controls.Clear();
             guna2Panel3.Controls.Add(childForm);
             guna2Panel3.Tag = childForm;
             childForm.BringToFront();
@@ -39,17 +51,23 @@ namespace QTCSDLHD
         }
         private void btndn_Click(object sender, EventArgs e)
         {
-            openChildForm(new Login());
+            openChildForm(new Login(), this);
         }
 
         private void btndk_Click(object sender, EventArgs e)
         {
-            openChildForm(new Register());
+            openChildForm(new Register(), this);
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
-            openChildForm(new Login());
+
+            openChildForm(new Login(), this);
+        }
+
+        public void CloseParentForm()
+        {
+            this.Close(); // Đóng form cha
         }
     }
 }
