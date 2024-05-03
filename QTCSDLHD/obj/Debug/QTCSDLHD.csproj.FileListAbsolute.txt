@@ -73,4 +73,4 @@ E:\C#\QTCSDLHD\bin\Debug\Snappier.xml
 E:\C#\QTCSDLHD\bin\Debug\System.Security.AccessControl.xml
 E:\C#\QTCSDLHD\bin\Debug\System.Security.Principal.Windows.xml
 E:\C#\QTCSDLHD\bin\Debug\System.Text.Encoding.CodePages.xml
-E:\C#\QTCSDLHD\obj\Debug\QTCSDLHD.QLLichSu.resources
+E:\C#\QTCSDLHD\obj\Debug\QTCSDLHD.HoaDon.resources

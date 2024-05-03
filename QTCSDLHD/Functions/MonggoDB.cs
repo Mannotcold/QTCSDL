@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,31 +38,31 @@ namespace QTCSDLHD
                 IMongoDatabase db = dbClient.GetDatabase("QTCSDLHD");
 
                 // Lấy collection từ cơ sở dữ liệu
-                var empCollection = db.GetCollection<BsonDocument>("LichSu");
+                var empCollection = db.GetCollection<BsonDocument>("HoaDon");
 
                 // Tạo một document mới để thêm vào collection
                 var document = new BsonDocument
 {
-    { "lich_su_mua_ve", new BsonDocument
+    { "HoaDon", new BsonDocument
         {
-            { "thong_tin_chuyen_xe", new BsonDocument
-                {
-                    { "tuyen_duong", "Diem_di - Diem_den" },
-                    { "ngay_di", "dd/MM/yyyy" }
-                }
+            { "MaHD", "HD001" },
+            { "NgayLap", "01/05/2024" },
+            { "TongGiaVe", 500000 },
+            { "PhuongThucThanhToan", "Chuyen khoan" },
+            { "TongSoVe", 2 },
+            { "TrangThaiThanhToan", "Da thanh toan" },
+            { "SDT", "0123456789" }
+        }
+    },
+    { "Ve", new BsonArray
+        {
+            new BsonDocument
+            {
+                { "MaVe", "ABC123" }
             },
-            { "thong_tin_ve", new BsonDocument
-                {
-                    { "ma_ve", "ABC123" },
-                    { "thong_tin_hoa_don", new BsonDocument
-                        {
-                            { "tong_so_ve", 2 },
-                            { "so_tien", 500000 },
-                            { "phuong_thuc_thanh_toan", "Chuyen khoan" },
-                            { "trang_thai", "Da thanh toan" }
-                        }
-                    }
-                }
+            new BsonDocument
+            {
+                { "MaVe", "XYZ456" }
             }
         }
     }
@@ -80,45 +81,60 @@ namespace QTCSDLHD
         }
 
 
-        // Hàm tìm kiếm với 4 loại điều kiện và hiển thị kết quả trên DataGridView
-        public void SearchAndDisplayOnDGV(DataGridView dgv, string maVe = null, DateTime? thoiGian = null, string tuyenDuong = null, string trangThai = null)
+        public static void SearchAndDisplay(string maHD, string ngayLap, DataGridView dgvResults)
         {
-            var dbClient = new MongoClient("mongodb://localhost:27017");
-            IMongoDatabase db = dbClient.GetDatabase("QTCSDLHD");
-            var collection = db.GetCollection<BsonDocument>("LichSu"); // Thay "Ten_Collection" bằng tên collection của bạn
-            var filterBuilder = Builders<BsonDocument>.Filter;
-            var filter = filterBuilder.Empty; // Filter mặc định
+            try
+            {
+                // Thực hiện kết nối đến MongoDB
+                var dbClient = new MongoClient("mongodb://localhost:27017");
+                IMongoDatabase db = dbClient.GetDatabase("QTCSDLHD");
+                var collection = db.GetCollection<BsonDocument>("HoaDon");
+                Stopwatch stopwatch = Stopwatch.StartNew();
 
-            // Thêm điều kiện tìm kiếm vào filter nếu giá trị được cung cấp
-            if (!string.IsNullOrEmpty(maVe))
-            {
-                filter &= filterBuilder.Eq("ma_ve", maVe);
-            }
-            if (thoiGian.HasValue)
-            {
-                filter &= filterBuilder.Eq("ngay_di", thoiGian);
-            }
-            if (!string.IsNullOrEmpty(tuyenDuong))
-            {
-                filter &= filterBuilder.Eq("tuyen_duong", tuyenDuong);
-            }
-            if (!string.IsNullOrEmpty(trangThai))
-            {
-                filter &= filterBuilder.Eq("trang_thai", trangThai);
-            }
+                // Thực hiện truy vấn
+                // ...
 
-            // Thực hiện truy vấn và lấy kết quả
-            var results = collection.Find(filter).ToList();
+                var filter = Builders<BsonDocument>.Filter.Or(
+           Builders<BsonDocument>.Filter.Eq("HoaDon.MaHD", maHD),
+           Builders<BsonDocument>.Filter.Eq("HoaDon.NgayLap", ngayLap)
+       );
+                // Dừng đo thời gian
+                stopwatch.Stop();
 
-            // Hiển thị kết quả trên DataGridView
-            dgv.Rows.Clear();
-            foreach (var result in results)
+                // Hiển thị thời gian thực thi
+                MessageBox.Show($"Thời gian thực thi: {stopwatch.ElapsedMilliseconds} ms");
+                // Tạo filter để tìm kiếm theo mã hóa đơn
+               
+
+                // Thực hiện tìm kiếm trong collection
+                var result = collection.Find(filter).FirstOrDefault();
+
+                // Kiểm tra kết quả tìm kiếm
+                if (result != null)
+                {
+                    // Lấy dữ liệu từ kết quả tìm kiếm và gán vào các biến
+                    string maHoaDon = result["HoaDon"]["MaHD"].AsString;
+                    string ngayLap1 = result["HoaDon"]["NgayLap"].AsString;
+                    int tongGiaVe = result["HoaDon"]["TongGiaVe"].AsInt32;
+                    string phuongThucThanhToan = result["HoaDon"]["PhuongThucThanhToan"].AsString;
+                    int tongSoVe = result["HoaDon"]["TongSoVe"].AsInt32;
+                    string trangThaiThanhToan = result["HoaDon"]["TrangThaiThanhToan"].AsString;
+                    string SDT = result["HoaDon"]["SDT"].AsString;
+                    // Thêm dòng mới vào DataGridView với thông tin của hóa đơn
+                    dgvResults.Rows.Clear();
+                    dgvResults.Rows.Add(maHoaDon, ngayLap1, tongGiaVe, phuongThucThanhToan, tongSoVe, trangThaiThanhToan, SDT);
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy hóa đơn có mã số " + maHD);
+                }
+            }
+            catch (Exception ex)
             {
-                // Chuyển đổi BsonDocument sang Dictionary để dễ dàng truy cập
-                var documentDictionary = result.ToDictionary();
-
-                // Thêm dòng mới vào DataGridView và gán giá trị từ Dictionary
-                dgv.Rows.Add(documentDictionary.Values.ToArray());
+                // Xử lý lỗi nếu có
+                MessageBox.Show("Lỗi khi thực hiện tìm kiếm: " + ex.Message);
             }
         }
     }
