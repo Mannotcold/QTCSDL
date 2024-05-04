@@ -137,6 +137,163 @@ namespace QTCSDLHD
                 MessageBox.Show("Lỗi khi thực hiện tìm kiếm: " + ex.Message);
             }
         }
+
+        public void LoadMaGheToCheckedListBox(CheckedListBox checkedListBox, int maChuyenXe)
+        {
+            var dbClient = new MongoClient("mongodb://localhost:27017");
+            IMongoDatabase db = dbClient.GetDatabase("QTCSDLHD");
+            var collection = db.GetCollection<BsonDocument>("ChuyenXe");
+            var filterBuilder = Builders<BsonDocument>.Filter;
+            var filter = filterBuilder.Empty; // Filter mặc định
+
+            // Chuyển đổi maChuyenXe sang BsonValue
+            var maChuyenXeBson = BsonValue.Create(maChuyenXe);
+
+            // Tạo filter để lấy thông tin về ghế theo maChuyenXe
+            filter = Builders<BsonDocument>.Filter.Eq("chuyen_xe.thong_tin_chuyen_xe.MaChuyenXe", maChuyenXeBson);
+
+            // Thực hiện truy vấn và lấy kết quả
+            var result = collection.Find(filter).FirstOrDefault();
+
+            // Kiểm tra xem kết quả có tồn tại không
+            if (result != null)
+            {
+                // Lấy thông tin về ghế từ kết quả
+                var thongTinGheArray = result["chuyen_xe"]["thong_tin_ghe"].AsBsonArray;
+
+                // Xóa các mục hiện có trong CheckedListBox trước khi thêm mới
+                checkedListBox.Items.Clear();
+
+                // Thêm MaGhe vào CheckedListBox
+                foreach (var ghe in thongTinGheArray)
+                {
+                    string tinhTrang = ghe["TinhTrang"].ToString();
+                    if (tinhTrang != "Đã bán")
+                    {
+                        var maGhe = ghe["MaGhe"].ToString();
+                        checkedListBox.Items.Add(maGhe);
+                    }
+
+                }
+            }
+            // Thiết lập CheckOnClick để ngăn người dùng chọn các MaGhe có TinhTrang là "Đã bán"
+            checkedListBox.CheckOnClick = true;
+        }
+
+        public void LoadThongTinGheToDGV
+            (DataGridView dgv, List<string[]> selectedGheInfoList, CheckedListBox checkedListBoxChonghe, int maChuyenXe)
+        {
+            //List<string[]> selectedGheInfoList = new List<string[]>();
+            var dbClient = new MongoClient("mongodb://localhost:27017");
+            IMongoDatabase db = dbClient.GetDatabase("QTCSDLHD");
+            var collection = db.GetCollection<BsonDocument>("ChuyenXe");
+            var filterBuilder = Builders<BsonDocument>.Filter;
+            //var filter = filterBuilder.Empty; // Filter mặc định
+
+            // Duyệt qua tất cả các mục được chọn trong CheckedListBox và lấy thông tin từ MongoDB
+            foreach (var selectedItem in checkedListBoxChonghe.SelectedItems)
+            {
+                int maGhe = Convert.ToInt32(selectedItem.ToString());
+
+                // Tạo filter để lấy thông tin về ghế có mã là maGhe và có mã chuyến xe là maChuyenXe
+                //var filterBuilder = Builders<BsonDocument>.Filter;
+                var filter = filterBuilder.And(
+                    filterBuilder.Eq("chuyen_xe.thong_tin_ghe.MaGhe", maGhe),
+                    filterBuilder.Eq("chuyen_xe.thong_tin_chuyen_xe.MaChuyenXe", maChuyenXe)
+                );
+
+                // Thực hiện truy vấn và lưu kết quả vào danh sách
+                var result = collection.Find(filter).FirstOrDefault();
+                if (result != null)
+                {
+                    var chuyenXe = result["chuyen_xe"].AsBsonDocument;
+                    var tt_chuyenXe = chuyenXe["thong_tin_chuyen_xe"].AsBsonDocument;
+                    var ghe = chuyenXe["thong_tin_ghe"].AsBsonArray.FirstOrDefault(g => g["MaGhe"].AsInt32 == maGhe).AsBsonDocument;
+
+                    // Thêm thông tin của ghế vào danh sách
+                    selectedGheInfoList.Add(new string[] {
+                    maChuyenXe.ToString(),
+                    maGhe.ToString(),
+                    ghe["TinhTrang"].AsString,
+                    ghe["GiaVe"].AsInt32.ToString(),
+                    ghe["HangGhe"].AsString,
+                    ghe["Tang"].AsString,
+                    tt_chuyenXe["DiemDi"].AsString, //DiemDon
+                    tt_chuyenXe["DiemDen"].AsString //DiemTra
+                    });
+                }
+            }
+
+            // Hiển thị thông tin của các ghế đã chọn trong DataGridView
+            dgv.Rows.Clear();
+            foreach (var gheInfo in selectedGheInfoList)
+            {
+                dgv.Rows.Add(gheInfo);
+            }
+
+        }
+
+        public static void InsertDataVe(string hoten, string sdt, string email, DataGridView dgv)
+        {
+            try
+            {
+                // Kết nối đến MongoDB
+                var dbClient = new MongoClient("mongodb://localhost:27017");
+                IMongoDatabase db = dbClient.GetDatabase("QTCSDLHD");
+
+                // Lấy collection từ cơ sở dữ liệu
+                var collection = db.GetCollection<BsonDocument>("Ve");
+                var filterBuilder = Builders<BsonDocument>.Filter;
+
+                foreach (DataGridViewRow row in dgv.Rows)
+                {
+                    if (!row.IsNewRow) // Kiểm tra nếu không phải là dòng mới
+                    {
+                        string diemDon = row.Cells["DiemDon"].Value.ToString();
+                        string diemTra = row.Cells["DiemTra"].Value.ToString();
+                        int maGhe = Convert.ToInt32(row.Cells["MaGhe"].Value);
+                        int maChuyenXe = Convert.ToInt32(row.Cells["MaChuyenXe"].Value);
+
+                        // Tạo một document mới để thêm vào collection
+                        var document = new BsonDocument
+                        {
+                        { "MaVe", 6 },
+                        { "DiemDon", diemDon },
+                        { "DiemTra", diemTra },
+                        { "MaGhe", maGhe },
+                        { "MaChuyenXe", maChuyenXe },
+                        { "HoVaTen", hoten },
+                        { "SDT", sdt },
+                        { "Email", email }
+                        };
+
+                        // Thêm document vào collection
+                        collection.InsertOne(document);
+
+                        // Tạo filter để cập nhật trạng thái của ghế
+                        var filterGhe = Builders<BsonDocument>.Filter.And(
+                            Builders<BsonDocument>.Filter.Eq("thong_tin_ghe.MaGhe", maGhe),
+                            Builders<BsonDocument>.Filter.Eq("thong_tin_chuyen_xe.MaChuyenXe", maChuyenXe)
+                        );
+
+                        // Xây dựng update để cập nhật trạng thái của ghế
+                        var updateGhe = Builders<BsonDocument>.Update.Set("thong_tin_ghe.$.TinhTrang", "Đã bán");
+
+                        // Thực hiện cập nhật trong collection ChuyenXe
+                        var resultGhe = collection.UpdateOne(filterGhe, updateGhe);
+                    }
+                }
+
+
+                MessageBox.Show("Thêm dữ liệu vào MongoDB thành công!");
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi nếu có
+                MessageBox.Show($"Lỗi khi thêm dữ liệu vào MongoDB: {ex.Message}");
+            }
+        }
+
     }
 
 }

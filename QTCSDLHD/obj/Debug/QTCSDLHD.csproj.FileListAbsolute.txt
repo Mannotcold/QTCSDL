@@ -267,3 +267,191 @@ C:\Users\truon\Desktop\QTCSDL-master\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.c
 C:\Users\truon\Desktop\QTCSDL-master\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.csproj.Up2Date
 C:\Users\truon\Desktop\QTCSDL-master\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.exe
 C:\Users\truon\Desktop\QTCSDL-master\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.pdb
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\mongocrypt.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\QTCSDLHD.exe.config
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\QTCSDLHD.exe
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\QTCSDLHD.pdb
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\AWSSDK.Core.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\AWSSDK.SecurityToken.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Cassandra.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\DnsClient.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Guna.UI2.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\MongoDB.Bson.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\MongoDB.Driver.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\MongoDB.Libmongocrypt.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Pipelines.Sockets.Unofficial.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ServiceStack.Common.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ServiceStack.Redis.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ServiceStack.Text.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\SharpCompress.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Snappier.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\StackExchange.Redis.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Buffers.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Memory.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Threading.Channels.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ZstdSharp.dll
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\AWSSDK.Core.pdb
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\AWSSDK.Core.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\AWSSDK.SecurityToken.pdb
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\AWSSDK.SecurityToken.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Cassandra.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\DnsClient.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\MongoDB.Bson.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\MongoDB.Driver.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Pipelines.Sockets.Unofficial.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ServiceStack.Common.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ServiceStack.Redis.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ServiceStack.Text.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Snappier.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\StackExchange.Redis.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Buffers.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Memory.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Threading.Channels.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Threading.Tasks.Dataflow.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.csproj.AssemblyReference.cache
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Forms.AddAccount.resources
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.DatVe.resources
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Forms.DeleteAccount.resources
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.FormLogin.resources
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Login.resources
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Menu.resources
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.HoaDon.resources
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Forms.QuanLyThongTinTaiKhoan.resources
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Forms.UpdateAccount.resources
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Forms.ViewList.resources
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Properties.Resources.resources
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Register.resources
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.TimChuyenXe.resources
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.csproj.GenerateResource.cache
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.csproj.CopyComplete
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.exe
+C:\Users\Dell\Downloads\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.pdb
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\mongocrypt.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\QTCSDLHD.exe.config
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\QTCSDLHD.exe
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\QTCSDLHD.pdb
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\AWSSDK.Core.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\AWSSDK.SecurityToken.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Cassandra.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\DnsClient.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Guna.UI2.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\K4os.Compression.LZ4.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Extensions.Logging.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Win32.Registry.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\MongoDB.Bson.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\MongoDB.Driver.Core.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\MongoDB.Driver.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\MongoDB.Libmongocrypt.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Newtonsoft.Json.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Pipelines.Sockets.Unofficial.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ServiceStack.Common.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ServiceStack.Interfaces.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ServiceStack.Redis.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ServiceStack.Text.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\SharpCompress.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Snappier.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\StackExchange.Redis.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Buffers.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.IO.Pipelines.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Memory.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Numerics.Vectors.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Security.AccessControl.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Security.Principal.Windows.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Text.Encoding.CodePages.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Threading.Channels.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Threading.Tasks.Dataflow.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ZstdSharp.dll
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\AWSSDK.Core.pdb
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\AWSSDK.Core.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\AWSSDK.SecurityToken.pdb
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\AWSSDK.SecurityToken.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Cassandra.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\DnsClient.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\K4os.Compression.LZ4.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Extensions.Logging.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Microsoft.Win32.Registry.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\MongoDB.Bson.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\MongoDB.Driver.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\MongoDB.Driver.Core.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Newtonsoft.Json.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Pipelines.Sockets.Unofficial.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ServiceStack.Common.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ServiceStack.Redis.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\ServiceStack.Text.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\Snappier.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\StackExchange.Redis.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Buffers.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.IO.Pipelines.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Memory.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Numerics.Vectors.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Security.AccessControl.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Security.Principal.Windows.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Text.Encoding.CodePages.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Threading.Channels.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Threading.Tasks.Dataflow.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.csproj.AssemblyReference.cache
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Forms.AddAccount.resources
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.DatVe.resources
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Forms.DeleteAccount.resources
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.FormLogin.resources
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Login.resources
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Menu.resources
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.HoaDon.resources
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Forms.QuanLyThongTinTaiKhoan.resources
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Forms.UpdateAccount.resources
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Forms.ViewList.resources
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Properties.Resources.resources
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.Register.resources
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.TimChuyenXe.resources
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.csproj.GenerateResource.cache
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.csproj.CoreCompileInputs.cache
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.csproj.CopyComplete
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.exe
+E:\New folder (3)\QTCSDL-master_last\QTCSDL-master\QTCSDLHD\obj\Debug\QTCSDLHD.pdb
