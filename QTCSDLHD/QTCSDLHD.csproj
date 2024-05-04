@@ -225,7 +225,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AddAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddAccount.Designer.cs">
+      <DependentUpon>AddAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ChildForm.cs" />
+    <Compile Include="Forms\DatabaseHelper.cs" />
+    <Compile Include="Forms\DeleteAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeleteAccount.Designer.cs">
+      <DependentUpon>DeleteAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,6 +256,22 @@
     </Compile>
     <Compile Include="Forms\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuanLyThongTinTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TaiKhoan.cs" />
+    <Compile Include="Forms\UpdateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateAccount.Designer.cs">
+      <DependentUpon>UpdateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewList.Designer.cs">
+      <DependentUpon>ViewList.cs</DependentUpon>
     </Compile>
     <Compile Include="Functions\MonggoDB.cs" />
     <Compile Include="Forms\HoaDon.cs">
@@ -266,6 +295,12 @@
     <Compile Include="Forms\TimChuyenXe.Designer.cs">
       <DependentUpon>TimChuyenXe.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\AddAccount.resx">
+      <DependentUpon>AddAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DeleteAccount.resx">
+      <DependentUpon>DeleteAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +312,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\HoaDon.resx">
       <DependentUpon>HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuanLyThongTinTaiKhoan.resx">
+      <DependentUpon>QuanLyThongTinTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateAccount.resx">
+      <DependentUpon>UpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewList.resx">
+      <DependentUpon>ViewList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -320,6 +364,7 @@
     <None Include="image\iconswitch.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Forms\background1.JPG" />
     <Content Include="mongocrypt.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

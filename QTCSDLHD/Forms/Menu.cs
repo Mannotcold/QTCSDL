@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QTCSDLHD.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -60,6 +61,11 @@ namespace QTCSDLHD
         private void btnhd_Click(object sender, EventArgs e)
         {
             openChildForm(new HoaDon());
+        }
+
+        private void btnqltt_Click(object sender, EventArgs e)
+        {
+            openChildForm(new QuanLyThongTinTaiKhoan());
         }
     }
 }
