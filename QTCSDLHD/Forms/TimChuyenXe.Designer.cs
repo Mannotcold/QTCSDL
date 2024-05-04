@@ -29,323 +29,609 @@ namespace QTCSDLHD
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtmans = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.tabControlMCKH = new System.Windows.Forms.TabControl();
+            this.tabPageNgayDi = new System.Windows.Forms.TabPage();
+            this.buttonTimChuyenXe = new System.Windows.Forms.Button();
+            this.comboBoxSoVe = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerNgayDi = new System.Windows.Forms.DateTimePicker();
+            this.comboBoxDiemDen = new System.Windows.Forms.ComboBox();
+            this.comboBoxDiemDi = new System.Windows.Forms.ComboBox();
+            this.labelSoVe = new System.Windows.Forms.Label();
+            this.labelNgayDi = new System.Windows.Forms.Label();
+            this.labelDiemDen = new System.Windows.Forms.Label();
+            this.labelDiemDi = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dateTimePickerNgayVe = new System.Windows.Forms.DateTimePicker();
+            this.labelNgayVe = new System.Windows.Forms.Label();
+            this.buttonTimChuyenXeKH = new System.Windows.Forms.Button();
+            this.comboBoxSoVeKH = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerNgayDiKH = new System.Windows.Forms.DateTimePicker();
+            this.comboBoxDiemDenKH = new System.Windows.Forms.ComboBox();
+            this.comboBoxDiemDiKH = new System.Windows.Forms.ComboBox();
+            this.labelSoVeKH = new System.Windows.Forms.Label();
+            this.labelNgayDiKH = new System.Windows.Forms.Label();
+            this.labelDiemDenKH = new System.Windows.Forms.Label();
+            this.labelDiemDiKH = new System.Windows.Forms.Label();
+            this.groupBoxBoLocTimKiem = new System.Windows.Forms.GroupBox();
+            this.checkedListBoxTang = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBoxHangGhe = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBoxLoaiXe = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBoxGioDi = new System.Windows.Forms.CheckedListBox();
+            this.labelTang = new System.Windows.Forms.Label();
+            this.labelHangGhe = new System.Windows.Forms.Label();
+            this.labelLoaiXe = new System.Windows.Forms.Label();
+            this.labelGioDi = new System.Windows.Forms.Label();
+            this.groupBoxDSChuyenXe = new System.Windows.Forms.GroupBox();
+            this.dataGridViewDSChuyenXe = new System.Windows.Forms.DataGridView();
+            this.mactcx = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.machuyenxe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaydi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giodi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioden = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diemdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diemden = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaixe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giatien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabControlMCKH.SuspendLayout();
+            this.tabPageNgayDi.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.groupBoxBoLocTimKiem.SuspendLayout();
+            this.groupBoxDSChuyenXe.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDSChuyenXe)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtmans
+            // tabControlMCKH
             // 
-            this.txtmans.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtmans.Animated = true;
-            this.txtmans.BorderColor = System.Drawing.Color.White;
-            this.txtmans.BorderRadius = 6;
-            this.txtmans.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtmans.DefaultText = "";
-            this.txtmans.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtmans.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtmans.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtmans.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtmans.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtmans.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txtmans.ForeColor = System.Drawing.Color.Black;
-            this.txtmans.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtmans.Location = new System.Drawing.Point(60, 226);
-            this.txtmans.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtmans.Name = "txtmans";
-            this.txtmans.PasswordChar = '\0';
-            this.txtmans.PlaceholderText = "";
-            this.txtmans.SelectedText = "";
-            this.txtmans.Size = new System.Drawing.Size(111, 36);
-            this.txtmans.TabIndex = 54;
+            this.tabControlMCKH.Controls.Add(this.tabPageNgayDi);
+            this.tabControlMCKH.Controls.Add(this.tabPage2);
+            this.tabControlMCKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControlMCKH.Location = new System.Drawing.Point(2, 2);
+            this.tabControlMCKH.Name = "tabControlMCKH";
+            this.tabControlMCKH.SelectedIndex = 0;
+            this.tabControlMCKH.Size = new System.Drawing.Size(1411, 216);
+            this.tabControlMCKH.TabIndex = 82;
             // 
-            // label1
+            // tabPageNgayDi
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(57, 200);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 21);
-            this.label1.TabIndex = 53;
-            this.label1.Text = "Điểm đi";
+            this.tabPageNgayDi.Controls.Add(this.buttonTimChuyenXe);
+            this.tabPageNgayDi.Controls.Add(this.comboBoxSoVe);
+            this.tabPageNgayDi.Controls.Add(this.dateTimePickerNgayDi);
+            this.tabPageNgayDi.Controls.Add(this.comboBoxDiemDen);
+            this.tabPageNgayDi.Controls.Add(this.comboBoxDiemDi);
+            this.tabPageNgayDi.Controls.Add(this.labelSoVe);
+            this.tabPageNgayDi.Controls.Add(this.labelNgayDi);
+            this.tabPageNgayDi.Controls.Add(this.labelDiemDen);
+            this.tabPageNgayDi.Controls.Add(this.labelDiemDi);
+            this.tabPageNgayDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPageNgayDi.Location = new System.Drawing.Point(4, 34);
+            this.tabPageNgayDi.Name = "tabPageNgayDi";
+            this.tabPageNgayDi.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageNgayDi.Size = new System.Drawing.Size(1403, 178);
+            this.tabPageNgayDi.TabIndex = 0;
+            this.tabPageNgayDi.Text = "Một chiều";
+            this.tabPageNgayDi.UseVisualStyleBackColor = true;
+            this.tabPageNgayDi.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // guna2TextBox1
+            // buttonTimChuyenXe
             // 
-            this.guna2TextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2TextBox1.Animated = true;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox1.BorderRadius = 6;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(252, 226);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(111, 36);
-            this.guna2TextBox1.TabIndex = 56;
+            this.buttonTimChuyenXe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.buttonTimChuyenXe.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.buttonTimChuyenXe.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonTimChuyenXe.Location = new System.Drawing.Point(602, 110);
+            this.buttonTimChuyenXe.Name = "buttonTimChuyenXe";
+            this.buttonTimChuyenXe.Size = new System.Drawing.Size(200, 50);
+            this.buttonTimChuyenXe.TabIndex = 83;
+            this.buttonTimChuyenXe.Text = "Tìm chuyến xe";
+            this.buttonTimChuyenXe.UseVisualStyleBackColor = false;
+            this.buttonTimChuyenXe.Click += new System.EventHandler(this.buttonTimChuyenXe_Click);
             // 
-            // label2
+            // comboBoxSoVe
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(249, 200);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 21);
-            this.label2.TabIndex = 55;
-            this.label2.Text = "Điểm đến";
+            this.comboBoxSoVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSoVe.FormattingEnabled = true;
+            this.comboBoxSoVe.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.comboBoxSoVe.Location = new System.Drawing.Point(1125, 40);
+            this.comboBoxSoVe.Name = "comboBoxSoVe";
+            this.comboBoxSoVe.Size = new System.Drawing.Size(250, 30);
+            this.comboBoxSoVe.TabIndex = 7;
             // 
-            // guna2TextBox2
+            // dateTimePickerNgayDi
             // 
-            this.guna2TextBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2TextBox2.Animated = true;
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox2.BorderRadius = 6;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(398, 226);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(111, 36);
-            this.guna2TextBox2.TabIndex = 58;
+            this.dateTimePickerNgayDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerNgayDi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerNgayDi.Location = new System.Drawing.Point(761, 40);
+            this.dateTimePickerNgayDi.Name = "dateTimePickerNgayDi";
+            this.dateTimePickerNgayDi.Size = new System.Drawing.Size(250, 28);
+            this.dateTimePickerNgayDi.TabIndex = 6;
+            this.dateTimePickerNgayDi.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // label3
+            // comboBoxDiemDen
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(395, 200);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 21);
-            this.label3.TabIndex = 57;
-            this.label3.Text = "Ngày đi";
+            this.comboBoxDiemDen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDiemDen.FormattingEnabled = true;
+            this.comboBoxDiemDen.Location = new System.Drawing.Point(406, 40);
+            this.comboBoxDiemDen.Name = "comboBoxDiemDen";
+            this.comboBoxDiemDen.Size = new System.Drawing.Size(250, 30);
+            this.comboBoxDiemDen.TabIndex = 5;
             // 
-            // guna2TextBox3
+            // comboBoxDiemDi
             // 
-            this.guna2TextBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2TextBox3.Animated = true;
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox3.BorderRadius = 6;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(552, 226);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(111, 36);
-            this.guna2TextBox3.TabIndex = 60;
+            this.comboBoxDiemDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDiemDi.FormattingEnabled = true;
+            this.comboBoxDiemDi.Location = new System.Drawing.Point(45, 40);
+            this.comboBoxDiemDi.Name = "comboBoxDiemDi";
+            this.comboBoxDiemDi.Size = new System.Drawing.Size(250, 30);
+            this.comboBoxDiemDi.TabIndex = 4;
             // 
-            // label4
+            // labelSoVe
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(549, 200);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 21);
-            this.label4.TabIndex = 59;
-            this.label4.Text = "Ngày về";
+            this.labelSoVe.AutoSize = true;
+            this.labelSoVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSoVe.Location = new System.Drawing.Point(1120, 12);
+            this.labelSoVe.Name = "labelSoVe";
+            this.labelSoVe.Size = new System.Drawing.Size(56, 22);
+            this.labelSoVe.TabIndex = 3;
+            this.labelSoVe.Text = "Số vé";
             // 
-            // guna2TextBox4
+            // labelNgayDi
             // 
-            this.guna2TextBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2TextBox4.Animated = true;
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox4.BorderRadius = 6;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(707, 226);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(111, 36);
-            this.guna2TextBox4.TabIndex = 62;
+            this.labelNgayDi.AutoSize = true;
+            this.labelNgayDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNgayDi.Location = new System.Drawing.Point(756, 12);
+            this.labelNgayDi.Name = "labelNgayDi";
+            this.labelNgayDi.Size = new System.Drawing.Size(71, 22);
+            this.labelNgayDi.TabIndex = 2;
+            this.labelNgayDi.Text = "Ngày đi";
             // 
-            // label5
+            // labelDiemDen
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(704, 200);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 21);
-            this.label5.TabIndex = 61;
-            this.label5.Text = "Số vé";
+            this.labelDiemDen.AutoSize = true;
+            this.labelDiemDen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDiemDen.Location = new System.Drawing.Point(401, 12);
+            this.labelDiemDen.Name = "labelDiemDen";
+            this.labelDiemDen.Size = new System.Drawing.Size(86, 22);
+            this.labelDiemDen.TabIndex = 1;
+            this.labelDiemDen.Text = "Điểm đến";
             // 
-            // guna2GradientButton2
+            // labelDiemDi
             // 
-            this.guna2GradientButton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2GradientButton2.Animated = true;
-            this.guna2GradientButton2.BorderRadius = 10;
-            this.guna2GradientButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(368, 317);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.Size = new System.Drawing.Size(158, 45);
-            this.guna2GradientButton2.TabIndex = 72;
-            this.guna2GradientButton2.Text = "Tìm chuyến xe";
+            this.labelDiemDi.AutoSize = true;
+            this.labelDiemDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDiemDi.Location = new System.Drawing.Point(40, 12);
+            this.labelDiemDi.Name = "labelDiemDi";
+            this.labelDiemDi.Size = new System.Drawing.Size(70, 22);
+            this.labelDiemDi.TabIndex = 0;
+            this.labelDiemDi.Text = "Điểm đi";
+            this.labelDiemDi.Click += new System.EventHandler(this.label1_Click);
             // 
-            // checkBox1
+            // tabPage2
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(364, 143);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(73, 17);
-            this.checkBox1.TabIndex = 73;
-            this.checkBox1.Text = "Một chiều";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.tabPage2.Controls.Add(this.dateTimePickerNgayVe);
+            this.tabPage2.Controls.Add(this.labelNgayVe);
+            this.tabPage2.Controls.Add(this.buttonTimChuyenXeKH);
+            this.tabPage2.Controls.Add(this.comboBoxSoVeKH);
+            this.tabPage2.Controls.Add(this.dateTimePickerNgayDiKH);
+            this.tabPage2.Controls.Add(this.comboBoxDiemDenKH);
+            this.tabPage2.Controls.Add(this.comboBoxDiemDiKH);
+            this.tabPage2.Controls.Add(this.labelSoVeKH);
+            this.tabPage2.Controls.Add(this.labelNgayDiKH);
+            this.tabPage2.Controls.Add(this.labelDiemDenKH);
+            this.tabPage2.Controls.Add(this.labelDiemDiKH);
+            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1403, 178);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Khứ hồi";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // dateTimePickerNgayVe
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(464, 143);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(62, 17);
-            this.checkBox2.TabIndex = 74;
-            this.checkBox2.Text = "Khứ hồi";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.dateTimePickerNgayVe.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerNgayVe.Location = new System.Drawing.Point(850, 43);
+            this.dateTimePickerNgayVe.Name = "dateTimePickerNgayVe";
+            this.dateTimePickerNgayVe.Size = new System.Drawing.Size(250, 30);
+            this.dateTimePickerNgayVe.TabIndex = 94;
             // 
-            // guna2CirclePictureBox1
+            // labelNgayVe
             // 
-            this.guna2CirclePictureBox1.Image = global::QTCSDLHD.Properties.Resources.iconswitch;
-            this.guna2CirclePictureBox1.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Horizontal;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(192, 230);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(36, 32);
-            this.guna2CirclePictureBox1.TabIndex = 75;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.labelNgayVe.AutoSize = true;
+            this.labelNgayVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNgayVe.Location = new System.Drawing.Point(845, 15);
+            this.labelNgayVe.Name = "labelNgayVe";
+            this.labelNgayVe.Size = new System.Drawing.Size(76, 22);
+            this.labelNgayVe.TabIndex = 93;
+            this.labelNgayVe.Text = "Ngày về";
             // 
-            // guna2DateTimePicker1
+            // buttonTimChuyenXeKH
             // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(552, 285);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(111, 32);
-            this.guna2DateTimePicker1.TabIndex = 76;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 5, 1, 21, 12, 21, 706);
+            this.buttonTimChuyenXeKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.buttonTimChuyenXeKH.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.buttonTimChuyenXeKH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonTimChuyenXeKH.Location = new System.Drawing.Point(596, 113);
+            this.buttonTimChuyenXeKH.Name = "buttonTimChuyenXeKH";
+            this.buttonTimChuyenXeKH.Size = new System.Drawing.Size(200, 50);
+            this.buttonTimChuyenXeKH.TabIndex = 92;
+            this.buttonTimChuyenXeKH.Text = "Tìm chuyến xe";
+            this.buttonTimChuyenXeKH.UseVisualStyleBackColor = false;
+            this.buttonTimChuyenXeKH.Click += new System.EventHandler(this.buttonTimChuyenXeKH_Click);
+            // 
+            // comboBoxSoVeKH
+            // 
+            this.comboBoxSoVeKH.FormattingEnabled = true;
+            this.comboBoxSoVeKH.Location = new System.Drawing.Point(1125, 43);
+            this.comboBoxSoVeKH.Name = "comboBoxSoVeKH";
+            this.comboBoxSoVeKH.Size = new System.Drawing.Size(250, 33);
+            this.comboBoxSoVeKH.TabIndex = 91;
+            // 
+            // dateTimePickerNgayDiKH
+            // 
+            this.dateTimePickerNgayDiKH.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerNgayDiKH.Location = new System.Drawing.Point(573, 43);
+            this.dateTimePickerNgayDiKH.Name = "dateTimePickerNgayDiKH";
+            this.dateTimePickerNgayDiKH.Size = new System.Drawing.Size(250, 30);
+            this.dateTimePickerNgayDiKH.TabIndex = 90;
+            // 
+            // comboBoxDiemDenKH
+            // 
+            this.comboBoxDiemDenKH.FormattingEnabled = true;
+            this.comboBoxDiemDenKH.Location = new System.Drawing.Point(299, 43);
+            this.comboBoxDiemDenKH.Name = "comboBoxDiemDenKH";
+            this.comboBoxDiemDenKH.Size = new System.Drawing.Size(250, 33);
+            this.comboBoxDiemDenKH.TabIndex = 89;
+            // 
+            // comboBoxDiemDiKH
+            // 
+            this.comboBoxDiemDiKH.FormattingEnabled = true;
+            this.comboBoxDiemDiKH.Location = new System.Drawing.Point(22, 43);
+            this.comboBoxDiemDiKH.Name = "comboBoxDiemDiKH";
+            this.comboBoxDiemDiKH.Size = new System.Drawing.Size(250, 33);
+            this.comboBoxDiemDiKH.TabIndex = 88;
+            // 
+            // labelSoVeKH
+            // 
+            this.labelSoVeKH.AutoSize = true;
+            this.labelSoVeKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSoVeKH.Location = new System.Drawing.Point(1120, 15);
+            this.labelSoVeKH.Name = "labelSoVeKH";
+            this.labelSoVeKH.Size = new System.Drawing.Size(56, 22);
+            this.labelSoVeKH.TabIndex = 87;
+            this.labelSoVeKH.Text = "Số vé";
+            // 
+            // labelNgayDiKH
+            // 
+            this.labelNgayDiKH.AutoSize = true;
+            this.labelNgayDiKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNgayDiKH.Location = new System.Drawing.Point(568, 15);
+            this.labelNgayDiKH.Name = "labelNgayDiKH";
+            this.labelNgayDiKH.Size = new System.Drawing.Size(71, 22);
+            this.labelNgayDiKH.TabIndex = 86;
+            this.labelNgayDiKH.Text = "Ngày đi";
+            // 
+            // labelDiemDenKH
+            // 
+            this.labelDiemDenKH.AutoSize = true;
+            this.labelDiemDenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDiemDenKH.Location = new System.Drawing.Point(294, 15);
+            this.labelDiemDenKH.Name = "labelDiemDenKH";
+            this.labelDiemDenKH.Size = new System.Drawing.Size(86, 22);
+            this.labelDiemDenKH.TabIndex = 85;
+            this.labelDiemDenKH.Text = "Điểm đến";
+            // 
+            // labelDiemDiKH
+            // 
+            this.labelDiemDiKH.AutoSize = true;
+            this.labelDiemDiKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDiemDiKH.Location = new System.Drawing.Point(17, 15);
+            this.labelDiemDiKH.Name = "labelDiemDiKH";
+            this.labelDiemDiKH.Size = new System.Drawing.Size(70, 22);
+            this.labelDiemDiKH.TabIndex = 84;
+            this.labelDiemDiKH.Text = "Điểm đi";
+            // 
+            // groupBoxBoLocTimKiem
+            // 
+            this.groupBoxBoLocTimKiem.Controls.Add(this.checkedListBoxTang);
+            this.groupBoxBoLocTimKiem.Controls.Add(this.checkedListBoxHangGhe);
+            this.groupBoxBoLocTimKiem.Controls.Add(this.checkedListBoxLoaiXe);
+            this.groupBoxBoLocTimKiem.Controls.Add(this.checkedListBoxGioDi);
+            this.groupBoxBoLocTimKiem.Controls.Add(this.labelTang);
+            this.groupBoxBoLocTimKiem.Controls.Add(this.labelHangGhe);
+            this.groupBoxBoLocTimKiem.Controls.Add(this.labelLoaiXe);
+            this.groupBoxBoLocTimKiem.Controls.Add(this.labelGioDi);
+            this.groupBoxBoLocTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxBoLocTimKiem.Location = new System.Drawing.Point(6, 240);
+            this.groupBoxBoLocTimKiem.Name = "groupBoxBoLocTimKiem";
+            this.groupBoxBoLocTimKiem.Size = new System.Drawing.Size(295, 410);
+            this.groupBoxBoLocTimKiem.TabIndex = 83;
+            this.groupBoxBoLocTimKiem.TabStop = false;
+            this.groupBoxBoLocTimKiem.Text = "BỘ LỌC TÌM KIẾM";
+            // 
+            // checkedListBoxTang
+            // 
+            this.checkedListBoxTang.BackColor = System.Drawing.SystemColors.Control;
+            this.checkedListBoxTang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBoxTang.FormattingEnabled = true;
+            this.checkedListBoxTang.Items.AddRange(new object[] {
+            "Tầng trên",
+            "Tầng dưới"});
+            this.checkedListBoxTang.Location = new System.Drawing.Point(0, 336);
+            this.checkedListBoxTang.Name = "checkedListBoxTang";
+            this.checkedListBoxTang.Size = new System.Drawing.Size(295, 73);
+            this.checkedListBoxTang.TabIndex = 92;
+            // 
+            // checkedListBoxHangGhe
+            // 
+            this.checkedListBoxHangGhe.BackColor = System.Drawing.SystemColors.Control;
+            this.checkedListBoxHangGhe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBoxHangGhe.FormattingEnabled = true;
+            this.checkedListBoxHangGhe.Items.AddRange(new object[] {
+            "Hàng đầu",
+            "Hàng giữa",
+            "Hàng cuối"});
+            this.checkedListBoxHangGhe.Location = new System.Drawing.Point(155, 210);
+            this.checkedListBoxHangGhe.Name = "checkedListBoxHangGhe";
+            this.checkedListBoxHangGhe.Size = new System.Drawing.Size(140, 96);
+            this.checkedListBoxHangGhe.TabIndex = 91;
+            // 
+            // checkedListBoxLoaiXe
+            // 
+            this.checkedListBoxLoaiXe.BackColor = System.Drawing.SystemColors.Control;
+            this.checkedListBoxLoaiXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBoxLoaiXe.FormattingEnabled = true;
+            this.checkedListBoxLoaiXe.Items.AddRange(new object[] {
+            "Ghế",
+            "Giường",
+            "Limousine"});
+            this.checkedListBoxLoaiXe.Location = new System.Drawing.Point(1, 210);
+            this.checkedListBoxLoaiXe.Name = "checkedListBoxLoaiXe";
+            this.checkedListBoxLoaiXe.Size = new System.Drawing.Size(148, 96);
+            this.checkedListBoxLoaiXe.TabIndex = 90;
+            // 
+            // checkedListBoxGioDi
+            // 
+            this.checkedListBoxGioDi.BackColor = System.Drawing.SystemColors.Control;
+            this.checkedListBoxGioDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBoxGioDi.FormattingEnabled = true;
+            this.checkedListBoxGioDi.Items.AddRange(new object[] {
+            "Sáng sớm 00:00 - 06:00",
+            "Buổi sáng 06:00 - 12:00",
+            "Buổi chiều 12:00 - 18:00",
+            "Buổi tối 18:00 - 24:00"});
+            this.checkedListBoxGioDi.Location = new System.Drawing.Point(1, 61);
+            this.checkedListBoxGioDi.Name = "checkedListBoxGioDi";
+            this.checkedListBoxGioDi.Size = new System.Drawing.Size(294, 119);
+            this.checkedListBoxGioDi.TabIndex = 0;
+            // 
+            // labelTang
+            // 
+            this.labelTang.AutoSize = true;
+            this.labelTang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTang.Location = new System.Drawing.Point(6, 310);
+            this.labelTang.Name = "labelTang";
+            this.labelTang.Size = new System.Drawing.Size(58, 25);
+            this.labelTang.TabIndex = 88;
+            this.labelTang.Text = "Tầng";
+            // 
+            // labelHangGhe
+            // 
+            this.labelHangGhe.AutoSize = true;
+            this.labelHangGhe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHangGhe.Location = new System.Drawing.Point(152, 184);
+            this.labelHangGhe.Name = "labelHangGhe";
+            this.labelHangGhe.Size = new System.Drawing.Size(97, 25);
+            this.labelHangGhe.TabIndex = 87;
+            this.labelHangGhe.Text = "Hàng ghế";
+            // 
+            // labelLoaiXe
+            // 
+            this.labelLoaiXe.AutoSize = true;
+            this.labelLoaiXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLoaiXe.Location = new System.Drawing.Point(6, 184);
+            this.labelLoaiXe.Name = "labelLoaiXe";
+            this.labelLoaiXe.Size = new System.Drawing.Size(75, 25);
+            this.labelLoaiXe.TabIndex = 86;
+            this.labelLoaiXe.Text = "Loại xe";
+            // 
+            // labelGioDi
+            // 
+            this.labelGioDi.AutoSize = true;
+            this.labelGioDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGioDi.Location = new System.Drawing.Point(6, 33);
+            this.labelGioDi.Name = "labelGioDi";
+            this.labelGioDi.Size = new System.Drawing.Size(62, 25);
+            this.labelGioDi.TabIndex = 85;
+            this.labelGioDi.Text = "Giờ đi";
+            // 
+            // groupBoxDSChuyenXe
+            // 
+            this.groupBoxDSChuyenXe.Controls.Add(this.dataGridViewDSChuyenXe);
+            this.groupBoxDSChuyenXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxDSChuyenXe.Location = new System.Drawing.Point(321, 239);
+            this.groupBoxDSChuyenXe.Name = "groupBoxDSChuyenXe";
+            this.groupBoxDSChuyenXe.Size = new System.Drawing.Size(1090, 411);
+            this.groupBoxDSChuyenXe.TabIndex = 84;
+            this.groupBoxDSChuyenXe.TabStop = false;
+            this.groupBoxDSChuyenXe.Text = "Danh sách chuyến xe";
+            // 
+            // dataGridViewDSChuyenXe
+            // 
+            this.dataGridViewDSChuyenXe.AllowUserToDeleteRows = false;
+            this.dataGridViewDSChuyenXe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDSChuyenXe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mactcx,
+            this.machuyenxe,
+            this.ngaydi,
+            this.giodi,
+            this.gioden,
+            this.diemdi,
+            this.diemden,
+            this.loaixe,
+            this.giatien});
+            this.dataGridViewDSChuyenXe.Location = new System.Drawing.Point(0, 30);
+            this.dataGridViewDSChuyenXe.Name = "dataGridViewDSChuyenXe";
+            this.dataGridViewDSChuyenXe.ReadOnly = true;
+            this.dataGridViewDSChuyenXe.RowHeadersWidth = 51;
+            this.dataGridViewDSChuyenXe.RowTemplate.Height = 24;
+            this.dataGridViewDSChuyenXe.Size = new System.Drawing.Size(1090, 380);
+            this.dataGridViewDSChuyenXe.TabIndex = 0;
+            this.dataGridViewDSChuyenXe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDSChuyenXe_CellContentClick);
+            // 
+            // mactcx
+            // 
+            this.mactcx.DataPropertyName = "mactcx";
+            this.mactcx.HeaderText = "Mã chi tiết";
+            this.mactcx.MinimumWidth = 6;
+            this.mactcx.Name = "mactcx";
+            this.mactcx.ReadOnly = true;
+            this.mactcx.Visible = false;
+            this.mactcx.Width = 125;
+            // 
+            // machuyenxe
+            // 
+            this.machuyenxe.DataPropertyName = "machuyenxe";
+            this.machuyenxe.HeaderText = "Mã chuyến xe";
+            this.machuyenxe.MinimumWidth = 6;
+            this.machuyenxe.Name = "machuyenxe";
+            this.machuyenxe.ReadOnly = true;
+            this.machuyenxe.Visible = false;
+            this.machuyenxe.Width = 125;
+            // 
+            // ngaydi
+            // 
+            this.ngaydi.DataPropertyName = "ngaydi";
+            this.ngaydi.HeaderText = "Ngày đi";
+            this.ngaydi.MinimumWidth = 6;
+            this.ngaydi.Name = "ngaydi";
+            this.ngaydi.ReadOnly = true;
+            this.ngaydi.Width = 125;
+            // 
+            // giodi
+            // 
+            this.giodi.DataPropertyName = "giodi";
+            this.giodi.HeaderText = "Giờ đi";
+            this.giodi.MinimumWidth = 6;
+            this.giodi.Name = "giodi";
+            this.giodi.ReadOnly = true;
+            this.giodi.Width = 125;
+            // 
+            // gioden
+            // 
+            this.gioden.DataPropertyName = "gioden";
+            this.gioden.HeaderText = "Giờ đến";
+            this.gioden.MinimumWidth = 6;
+            this.gioden.Name = "gioden";
+            this.gioden.ReadOnly = true;
+            this.gioden.Width = 125;
+            // 
+            // diemdi
+            // 
+            this.diemdi.DataPropertyName = "diemdi";
+            this.diemdi.HeaderText = "Điểm đi";
+            this.diemdi.MinimumWidth = 6;
+            this.diemdi.Name = "diemdi";
+            this.diemdi.ReadOnly = true;
+            this.diemdi.Width = 125;
+            // 
+            // diemden
+            // 
+            this.diemden.DataPropertyName = "diemden";
+            this.diemden.HeaderText = "Điểm đến";
+            this.diemden.MinimumWidth = 6;
+            this.diemden.Name = "diemden";
+            this.diemden.ReadOnly = true;
+            this.diemden.Width = 125;
+            // 
+            // loaixe
+            // 
+            this.loaixe.DataPropertyName = "loaixe";
+            this.loaixe.HeaderText = "Loại xe";
+            this.loaixe.MinimumWidth = 6;
+            this.loaixe.Name = "loaixe";
+            this.loaixe.ReadOnly = true;
+            this.loaixe.Width = 125;
+            // 
+            // giatien
+            // 
+            this.giatien.DataPropertyName = "giatien";
+            this.giatien.HeaderText = "Giá tiền";
+            this.giatien.MinimumWidth = 6;
+            this.giatien.Name = "giatien";
+            this.giatien.ReadOnly = true;
+            this.giatien.Width = 125;
             // 
             // TimChuyenXe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 561);
-            this.Controls.Add(this.guna2DateTimePicker1);
-            this.Controls.Add(this.guna2CirclePictureBox1);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.guna2GradientButton2);
-            this.Controls.Add(this.guna2TextBox4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.guna2TextBox3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtmans);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1411, 647);
+            this.Controls.Add(this.groupBoxDSChuyenXe);
+            this.Controls.Add(this.groupBoxBoLocTimKiem);
+            this.Controls.Add(this.tabControlMCKH);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TimChuyenXe";
             this.Text = "TimChuyenXe";
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.TimChuyenXe_Load);
+            this.tabControlMCKH.ResumeLayout(false);
+            this.tabPageNgayDi.ResumeLayout(false);
+            this.tabPageNgayDi.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.groupBoxBoLocTimKiem.ResumeLayout(false);
+            this.groupBoxBoLocTimKiem.PerformLayout();
+            this.groupBoxDSChuyenXe.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDSChuyenXe)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2TextBox txtmans;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private System.Windows.Forms.TabControl tabControlMCKH;
+        private System.Windows.Forms.TabPage tabPageNgayDi;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label labelDiemDi;
+        private System.Windows.Forms.ComboBox comboBoxDiemDen;
+        private System.Windows.Forms.ComboBox comboBoxDiemDi;
+        private System.Windows.Forms.Label labelSoVe;
+        private System.Windows.Forms.Label labelNgayDi;
+        private System.Windows.Forms.Label labelDiemDen;
+        private System.Windows.Forms.DateTimePicker dateTimePickerNgayDi;
+        private System.Windows.Forms.ComboBox comboBoxSoVe;
+        private System.Windows.Forms.Button buttonTimChuyenXe;
+        private System.Windows.Forms.DateTimePicker dateTimePickerNgayVe;
+        private System.Windows.Forms.Label labelNgayVe;
+        private System.Windows.Forms.Button buttonTimChuyenXeKH;
+        private System.Windows.Forms.ComboBox comboBoxSoVeKH;
+        private System.Windows.Forms.DateTimePicker dateTimePickerNgayDiKH;
+        private System.Windows.Forms.ComboBox comboBoxDiemDenKH;
+        private System.Windows.Forms.ComboBox comboBoxDiemDiKH;
+        private System.Windows.Forms.Label labelSoVeKH;
+        private System.Windows.Forms.Label labelNgayDiKH;
+        private System.Windows.Forms.Label labelDiemDenKH;
+        private System.Windows.Forms.Label labelDiemDiKH;
+        private System.Windows.Forms.GroupBox groupBoxBoLocTimKiem;
+        private System.Windows.Forms.CheckedListBox checkedListBoxGioDi;
+        private System.Windows.Forms.Label labelTang;
+        private System.Windows.Forms.Label labelHangGhe;
+        private System.Windows.Forms.Label labelLoaiXe;
+        private System.Windows.Forms.Label labelGioDi;
+        private System.Windows.Forms.CheckedListBox checkedListBoxTang;
+        private System.Windows.Forms.CheckedListBox checkedListBoxHangGhe;
+        private System.Windows.Forms.CheckedListBox checkedListBoxLoaiXe;
+        private System.Windows.Forms.GroupBox groupBoxDSChuyenXe;
+        private System.Windows.Forms.DataGridView dataGridViewDSChuyenXe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mactcx;
+        private System.Windows.Forms.DataGridViewTextBoxColumn machuyenxe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaydi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giodi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gioden;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diemdi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diemden;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loaixe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giatien;
     }
 }

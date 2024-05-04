@@ -232,6 +232,12 @@
       <DependentUpon>AddAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ChildForm.cs" />
+    <Compile Include="Forms\ChiTietChuyenXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChiTietChuyenXe.Designer.cs">
+      <DependentUpon>ChiTietChuyenXe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DatabaseHelper.cs" />
     <Compile Include="Forms\DatVe.cs">
       <SubType>Form</SubType>
@@ -267,6 +273,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\TaiKhoan.cs" />
+    <Compile Include="Forms\TimChuyenXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TimChuyenXe.Designer.cs">
+      <DependentUpon>TimChuyenXe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UpdateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -279,6 +291,7 @@
     <Compile Include="Forms\ViewList.Designer.cs">
       <DependentUpon>ViewList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Functions\CassandraFunctions.cs" />
     <Compile Include="Functions\MonggoDB.cs" />
     <Compile Include="Forms\HoaDon.cs">
       <SubType>Form</SubType>
@@ -295,14 +308,11 @@
     <Compile Include="Forms\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TimChuyenXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\TimChuyenXe.Designer.cs">
-      <DependentUpon>TimChuyenXe.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Forms\AddAccount.resx">
       <DependentUpon>AddAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChiTietChuyenXe.resx">
+      <DependentUpon>ChiTietChuyenXe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DatVe.resx">
       <DependentUpon>DatVe.cs</DependentUpon>
@@ -325,6 +335,9 @@
     <EmbeddedResource Include="Forms\QuanLyThongTinTaiKhoan.resx">
       <DependentUpon>QuanLyThongTinTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TimChuyenXe.resx">
+      <DependentUpon>TimChuyenXe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UpdateAccount.resx">
       <DependentUpon>UpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -343,9 +356,6 @@
     </Compile>
     <EmbeddedResource Include="Forms\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TimChuyenXe.resx">
-      <DependentUpon>TimChuyenXe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
