@@ -30,6 +30,12 @@ namespace QTCSDLHD
                 string username = txtBox_tendangnhap.Text;
                 string password = txtBox_matkhau.Text;
 
+                // nếu chưa có dữ liệu 
+                if (username.Length == 0 | password.Length == 0)
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ dữ liệu !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
                 // Tạo một instance của database Redis
                 IDatabase db = RedisFunctions.GetDatabase();
 
@@ -39,7 +45,8 @@ namespace QTCSDLHD
                 // Kiểm tra xem mật khẩu đã nhập có khớp với mật khẩu lưu trữ trong Redis không
                 if (storedPassword == password)
                 {
-                    MessageBox.Show("Login successful.");
+                    MessageBox.Show("Đăng nhập thành công !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
                     Form form = new Menu(username, password);
                     // Lấy tham chiếu tới form cha
                     
@@ -49,7 +56,8 @@ namespace QTCSDLHD
                 }
                 else
                 {
-                    MessageBox.Show("Incorrect username or password.");
+                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!!. Vui lòng nhập lại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    
                 }
             }
             catch (Exception ex)

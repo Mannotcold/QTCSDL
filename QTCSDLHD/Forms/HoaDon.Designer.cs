@@ -38,6 +38,7 @@ namespace QTCSDLHD
             this.txtmahd = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Date = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.btndisplay = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvhd)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,6 +77,7 @@ namespace QTCSDLHD
             this.dgvhd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvhd.Size = new System.Drawing.Size(1123, 497);
             this.dgvhd.TabIndex = 106;
+            this.dgvhd.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvhd_CellContentClick);
             // 
             // label6
             // 
@@ -104,7 +106,7 @@ namespace QTCSDLHD
             this.btntim.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btntim.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btntim.ForeColor = System.Drawing.Color.Black;
-            this.btntim.Location = new System.Drawing.Point(419, 110);
+            this.btntim.Location = new System.Drawing.Point(428, 108);
             this.btntim.Name = "btntim";
             this.btntim.Size = new System.Drawing.Size(141, 36);
             this.btntim.TabIndex = 103;
@@ -179,12 +181,35 @@ namespace QTCSDLHD
             this.Date.TabIndex = 108;
             this.Date.Value = new System.DateTime(2024, 5, 3, 0, 0, 0, 0);
             // 
+            // btndisplay
+            // 
+            this.btndisplay.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btndisplay.Animated = true;
+            this.btndisplay.BorderRadius = 10;
+            this.btndisplay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndisplay.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btndisplay.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btndisplay.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btndisplay.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btndisplay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btndisplay.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btndisplay.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btndisplay.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btndisplay.ForeColor = System.Drawing.Color.Black;
+            this.btndisplay.Location = new System.Drawing.Point(428, 57);
+            this.btndisplay.Name = "btndisplay";
+            this.btndisplay.Size = new System.Drawing.Size(141, 36);
+            this.btndisplay.TabIndex = 109;
+            this.btndisplay.Text = "Hiển thị tất cả";
+            this.btndisplay.Click += new System.EventHandler(this.btndisplay_Click);
+            // 
             // HoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1159, 677);
+            this.Controls.Add(this.btndisplay);
             this.Controls.Add(this.Date);
             this.Controls.Add(this.dgvhd);
             this.Controls.Add(this.label6);
@@ -209,5 +234,6 @@ namespace QTCSDLHD
         private Guna.UI2.WinForms.Guna2TextBox txtmahd;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2DateTimePicker Date;
+        private Guna.UI2.WinForms.Guna2GradientButton btndisplay;
     }
 }

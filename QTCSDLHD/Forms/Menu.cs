@@ -50,12 +50,12 @@ namespace QTCSDLHD
         }
         private void Menu_Load(object sender, EventArgs e)
         {
-            openChildForm(new TimChuyenXe());
+            //openChildForm(new TimChuyenXe());
         }
 
         private void btntc_Click(object sender, EventArgs e)
         {
-            openChildForm(new TimChuyenXe());
+            //openChildForm(new TimChuyenXe());
         }
 
         private void btnhd_Click(object sender, EventArgs e)
@@ -66,6 +66,11 @@ namespace QTCSDLHD
         private void btnqltt_Click(object sender, EventArgs e)
         {
             openChildForm(new QuanLyThongTinTaiKhoan());
+        }
+
+        private void btninfo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng đang được bảo trì. Vui lòng quay lại sau", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

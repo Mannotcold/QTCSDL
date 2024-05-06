@@ -56,9 +56,9 @@ namespace QTCSDLHD.Forms
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(24, 283);
+            this.btnAdd.Location = new System.Drawing.Point(82, 278);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(217, 94);
+            this.btnAdd.Size = new System.Drawing.Size(159, 86);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -66,9 +66,9 @@ namespace QTCSDLHD.Forms
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(276, 283);
+            this.btnDelete.Location = new System.Drawing.Point(334, 278);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(217, 94);
+            this.btnDelete.Size = new System.Drawing.Size(159, 86);
             this.btnDelete.TabIndex = 0;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -76,9 +76,9 @@ namespace QTCSDLHD.Forms
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(527, 283);
+            this.btnUpdate.Location = new System.Drawing.Point(585, 278);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(217, 94);
+            this.btnUpdate.Size = new System.Drawing.Size(159, 86);
             this.btnUpdate.TabIndex = 0;
             this.btnUpdate.Text = "Cập nhật";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -87,18 +87,18 @@ namespace QTCSDLHD.Forms
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QTCSDLHD.Properties.Resources.background1;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1028, 245);
+            this.pictureBox1.Size = new System.Drawing.Size(1120, 239);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnViewList
             // 
-            this.btnViewList.Location = new System.Drawing.Point(780, 283);
+            this.btnViewList.Location = new System.Drawing.Point(838, 278);
             this.btnViewList.Name = "btnViewList";
-            this.btnViewList.Size = new System.Drawing.Size(217, 94);
+            this.btnViewList.Size = new System.Drawing.Size(159, 86);
             this.btnViewList.TabIndex = 0;
             this.btnViewList.Text = "Xem danh sách";
             this.btnViewList.UseVisualStyleBackColor = true;
@@ -106,7 +106,7 @@ namespace QTCSDLHD.Forms
             // 
             // QuanLyThongTinTaiKhoan
             // 
-            this.ClientSize = new System.Drawing.Size(1027, 407);
+            this.ClientSize = new System.Drawing.Size(1120, 412);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);

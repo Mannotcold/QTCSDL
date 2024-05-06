@@ -12,14 +12,14 @@ namespace QTCSDLHD
 {
     class MonggoDB
     {
-        public static void Connect(string collection)
+        public static void Connect(string collection1)
         {
             try
             {
                 // Thực hiện kết nối đến MongoDB
                 var dbClient = new MongoClient("mongodb://localhost:27017");
                 IMongoDatabase db = dbClient.GetDatabase("QTCSDLHD");
-                var emp = db.GetCollection<BsonDocument>(collection);
+                var collection = db.GetCollection<BsonDocument>("HoaDon");
                 MessageBox.Show("Kết nối đến MongoDB thành công!");
             }
             catch (Exception ex)
@@ -29,56 +29,56 @@ namespace QTCSDLHD
             }
         }
 
-        public static void InsertData()
-        {
-            try
-            {
-                // Kết nối đến MongoDB
-                var dbClient = new MongoClient("mongodb://localhost:27017");
-                IMongoDatabase db = dbClient.GetDatabase("QTCSDLHD");
+//        public static void InsertData()
+//        {
+//            try
+//            {
+//                // Kết nối đến MongoDB
+//                var dbClient = new MongoClient("mongodb://localhost:27017");
+//                IMongoDatabase db = dbClient.GetDatabase("QTCSDLHD");
 
-                // Lấy collection từ cơ sở dữ liệu
-                var empCollection = db.GetCollection<BsonDocument>("HoaDon");
+//                // Lấy collection từ cơ sở dữ liệu
+//                var empCollection = db.GetCollection<BsonDocument>("HoaDon");
 
-                // Tạo một document mới để thêm vào collection
-                var document = new BsonDocument
-{
-    { "HoaDon", new BsonDocument
-        {
-            { "MaHD", "HD001" },
-            { "NgayLap", "01/05/2024" },
-            { "TongGiaVe", 500000 },
-            { "PhuongThucThanhToan", "Chuyen khoan" },
-            { "TongSoVe", 2 },
-            { "TrangThaiThanhToan", "Da thanh toan" },
-            { "SDT", "0123456789" }
-        }
-    },
-    { "Ve", new BsonArray
-        {
-            new BsonDocument
-            {
-                { "MaVe", "ABC123" }
-            },
-            new BsonDocument
-            {
-                { "MaVe", "XYZ456" }
-            }
-        }
-    }
-};
+//                // Tạo một document mới để thêm vào collection
+//                var document = new BsonDocument
+//{
+//    { "HoaDon", new BsonDocument
+//        {
+//            { "MaHD", "HD002" },
+//            { "NgayLap", "01/05/2024" },
+//            { "TongGiaVe", 500000 },
+//            { "PhuongThucThanhToan", "Chuyen khoan" },
+//            { "TongSoVe", 2 },
+//            { "TrangThaiThanhToan", "Da thanh toan" },
+//            { "SDT", "0123456789" }
+//        }
+//    },
+//    { "Ve", new BsonArray
+//        {
+//            new BsonDocument
+//            {
+//                { "MaVe", "ABC123" }
+//            },
+//            new BsonDocument
+//            {
+//                { "MaVe", "XYZ456" }
+//            }
+//        }
+//    }
+//};
 
-                // Thêm document vào collection
-                empCollection.InsertOne(document);
+//                // Thêm document vào collection
+//                empCollection.InsertOne(document);
 
-                MessageBox.Show("Thêm dữ liệu vào MongoDB thành công!");
-            }
-            catch (Exception ex)
-            {
-                // Xử lý lỗi nếu có
-                MessageBox.Show($"Lỗi khi thêm dữ liệu vào MongoDB: {ex.Message}");
-            }
-        }
+//                MessageBox.Show("Thêm dữ liệu vào MongoDB thành công!");
+//            }
+//            catch (Exception ex)
+//            {
+//                // Xử lý lỗi nếu có
+//                MessageBox.Show($"Lỗi khi thêm dữ liệu vào MongoDB: {ex.Message}");
+//            }
+//        }
 
 
         public static void SearchAndDisplay(string maHD, string ngayLap, DataGridView dgvResults)
@@ -89,20 +89,11 @@ namespace QTCSDLHD
                 var dbClient = new MongoClient("mongodb://localhost:27017");
                 IMongoDatabase db = dbClient.GetDatabase("QTCSDLHD");
                 var collection = db.GetCollection<BsonDocument>("HoaDon");
-                Stopwatch stopwatch = Stopwatch.StartNew();
-
-                // Thực hiện truy vấn
-                // ...
-
+                
                 var filter = Builders<BsonDocument>.Filter.Or(
            Builders<BsonDocument>.Filter.Eq("HoaDon.MaHD", maHD),
            Builders<BsonDocument>.Filter.Eq("HoaDon.NgayLap", ngayLap)
        );
-                // Dừng đo thời gian
-                stopwatch.Stop();
-
-                // Hiển thị thời gian thực thi
-                MessageBox.Show($"Thời gian thực thi: {stopwatch.ElapsedMilliseconds} ms");
                 // Tạo filter để tìm kiếm theo mã hóa đơn
                
 
@@ -137,6 +128,100 @@ namespace QTCSDLHD
                 MessageBox.Show("Lỗi khi thực hiện tìm kiếm: " + ex.Message);
             }
         }
+
+        public static void DisplayAllDocuments(DataGridView dgvResults)
+        {
+            try
+            {
+                // Thực hiện kết nối đến MongoDB
+                var dbClient = new MongoClient("mongodb://localhost:27017");
+                IMongoDatabase db = dbClient.GetDatabase("QTCSDLHD");
+                var collection = db.GetCollection<BsonDocument>("HoaDon");
+                
+
+
+                // Thực hiện truy vấn để lấy tất cả các hóa đơn
+                var results = collection.Find(new BsonDocument()).ToList();
+
+                // Kiểm tra kết quả tìm kiếm
+                if (results.Count > 0)
+                {
+                    // Hiển thị thông tin của tất cả các hóa đơn
+                    dgvResults.Rows.Clear();
+                    foreach (var result in results)
+                    {
+                        string maHoaDon = result["HoaDon"]["MaHD"].AsString;
+                        string ngayLap = result["HoaDon"]["NgayLap"].AsString;
+                        int tongGiaVe = result["HoaDon"]["TongGiaVe"].AsInt32;
+                        string phuongThucThanhToan = result["HoaDon"]["PhuongThucThanhToan"].AsString;
+                        int tongSoVe = result["HoaDon"]["TongSoVe"].AsInt32;
+                        string trangThaiThanhToan = result["HoaDon"]["TrangThaiThanhToan"].AsString;
+                        string sdt = result["HoaDon"]["SDT"].AsString;
+
+                        dgvResults.Rows.Add(maHoaDon, ngayLap, tongGiaVe, phuongThucThanhToan, tongSoVe, trangThaiThanhToan, sdt);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy hóa đơn nào.");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi nếu có
+                MessageBox.Show("Lỗi khi thực hiện tìm kiếm: " + ex.Message);
+            }
+        }
+
+
+        public static void DisplayTicketsByInvoiceID(string maHD)
+        {
+            try
+            {
+                // Thực hiện kết nối đến MongoDB
+                var dbClient = new MongoClient("mongodb://localhost:27017");
+                IMongoDatabase db = dbClient.GetDatabase("QTCSDLHD");
+                var collection = db.GetCollection<BsonDocument>("HoaDon");
+                
+
+                // Thực hiện truy vấn để tìm kiếm hóa đơn với mã hóa đơn cụ thể
+                var filter = Builders<BsonDocument>.Filter.Eq("HoaDon.MaHD", maHD);
+
+
+                // Thực hiện tìm kiếm trong collection
+                var result = collection.Find(filter).FirstOrDefault();
+
+                // Kiểm tra kết quả tìm kiếm
+                if (result != null)
+                {
+                    // Lấy mảng vé từ kết quả tìm kiếm
+                    var tickets = result["Ve"].AsBsonArray;
+
+                    // Tạo một chuỗi StringBuilder để lưu thông tin của từng vé
+                    StringBuilder sb = new StringBuilder();
+                    sb.AppendLine($"Thông tin vé của hóa đơn có mã số {maHD}:");
+                    foreach (var ticket in tickets)
+                    {
+                        string maVe = ticket["MaVe"].AsString;
+                        sb.AppendLine($"- Mã vé: {maVe}");
+                    }
+
+                    // Hiển thị thông tin trên MessageBox
+                    MessageBox.Show(sb.ToString());
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy hóa đơn có mã số " + maHD);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi nếu có
+                MessageBox.Show("Lỗi khi thực hiện tìm kiếm: " + ex.Message);
+            }
+        }
+
+
 
         public void LoadMaGheToCheckedListBox(CheckedListBox checkedListBox, int maChuyenXe)
         {

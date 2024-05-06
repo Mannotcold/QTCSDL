@@ -44,10 +44,9 @@ namespace QTCSDLHD
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 16F);
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(181, 80);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(136, 65);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(375, 37);
+            this.label6.Size = new System.Drawing.Size(305, 30);
             this.label6.TabIndex = 60;
             this.label6.Text = "Cùng bạn đến mọi nẻo đường";
             // 
@@ -57,10 +56,9 @@ namespace QTCSDLHD
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(176, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(132, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(411, 62);
+            this.label1.Size = new System.Drawing.Size(323, 50);
             this.label1.TabIndex = 61;
             this.label1.Text = "PHƯƠNG TRANG";
             // 
@@ -79,10 +77,9 @@ namespace QTCSDLHD
             this.btntc.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btntc.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btntc.ForeColor = System.Drawing.Color.Black;
-            this.btntc.Location = new System.Drawing.Point(161, 148);
-            this.btntc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btntc.Location = new System.Drawing.Point(121, 120);
             this.btntc.Name = "btntc";
-            this.btntc.Size = new System.Drawing.Size(209, 55);
+            this.btntc.Size = new System.Drawing.Size(157, 45);
             this.btntc.TabIndex = 69;
             this.btntc.Text = "Trang chủ";
             this.btntc.Click += new System.EventHandler(this.btntc_Click);
@@ -102,10 +99,9 @@ namespace QTCSDLHD
             this.btnhd.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnhd.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnhd.ForeColor = System.Drawing.Color.Black;
-            this.btnhd.Location = new System.Drawing.Point(513, 148);
-            this.btnhd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnhd.Location = new System.Drawing.Point(385, 120);
             this.btnhd.Name = "btnhd";
-            this.btnhd.Size = new System.Drawing.Size(212, 55);
+            this.btnhd.Size = new System.Drawing.Size(159, 45);
             this.btnhd.TabIndex = 70;
             this.btnhd.Text = "Hóa đơn";
             this.btnhd.Click += new System.EventHandler(this.btnhd_Click);
@@ -125,10 +121,9 @@ namespace QTCSDLHD
             this.btnqltt.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnqltt.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnqltt.ForeColor = System.Drawing.Color.Black;
-            this.btnqltt.Location = new System.Drawing.Point(865, 148);
-            this.btnqltt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnqltt.Location = new System.Drawing.Point(649, 120);
             this.btnqltt.Name = "btnqltt";
-            this.btnqltt.Size = new System.Drawing.Size(211, 55);
+            this.btnqltt.Size = new System.Drawing.Size(158, 45);
             this.btnqltt.TabIndex = 71;
             this.btnqltt.Text = "Quản lý thông tin";
             this.btnqltt.Click += new System.EventHandler(this.btnqltt_Click);
@@ -148,12 +143,12 @@ namespace QTCSDLHD
             this.btninfo.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btninfo.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btninfo.ForeColor = System.Drawing.Color.Black;
-            this.btninfo.Location = new System.Drawing.Point(1215, 148);
-            this.btninfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btninfo.Location = new System.Drawing.Point(911, 120);
             this.btninfo.Name = "btninfo";
-            this.btninfo.Size = new System.Drawing.Size(208, 55);
+            this.btninfo.Size = new System.Drawing.Size(156, 45);
             this.btninfo.TabIndex = 72;
             this.btninfo.Text = "Về chúng tôi";
+            this.btninfo.Click += new System.EventHandler(this.btninfo_Click);
             // 
             // guna2Panel1
             // 
@@ -161,18 +156,17 @@ namespace QTCSDLHD
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.guna2Panel1.Location = new System.Drawing.Point(31, 226);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Location = new System.Drawing.Point(23, 184);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1523, 716);
+            this.guna2Panel1.Size = new System.Drawing.Size(1142, 582);
             this.guna2Panel1.TabIndex = 73;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1569, 958);
+            this.ClientSize = new System.Drawing.Size(1177, 778);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.btninfo);
             this.Controls.Add(this.btnqltt);
@@ -180,7 +174,6 @@ namespace QTCSDLHD
             this.Controls.Add(this.btntc);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Menu";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
