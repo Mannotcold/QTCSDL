@@ -52,15 +52,6 @@ namespace QTCSDLHD
             this.labelNgayDiKH = new System.Windows.Forms.Label();
             this.labelDiemDenKH = new System.Windows.Forms.Label();
             this.labelDiemDiKH = new System.Windows.Forms.Label();
-            this.groupBoxBoLocTimKiem = new System.Windows.Forms.GroupBox();
-            this.checkedListBoxTang = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBoxHangGhe = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBoxLoaiXe = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBoxGioDi = new System.Windows.Forms.CheckedListBox();
-            this.labelTang = new System.Windows.Forms.Label();
-            this.labelHangGhe = new System.Windows.Forms.Label();
-            this.labelLoaiXe = new System.Windows.Forms.Label();
-            this.labelGioDi = new System.Windows.Forms.Label();
             this.groupBoxDSChuyenXe = new System.Windows.Forms.GroupBox();
             this.dataGridViewDSChuyenXe = new System.Windows.Forms.DataGridView();
             this.mactcx = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,7 +66,6 @@ namespace QTCSDLHD
             this.tabControlMCKH.SuspendLayout();
             this.tabPageNgayDi.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.groupBoxBoLocTimKiem.SuspendLayout();
             this.groupBoxDSChuyenXe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDSChuyenXe)).BeginInit();
             this.SuspendLayout();
@@ -232,10 +222,11 @@ namespace QTCSDLHD
             // 
             // dateTimePickerNgayVe
             // 
+            this.dateTimePickerNgayVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerNgayVe.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerNgayVe.Location = new System.Drawing.Point(850, 43);
             this.dateTimePickerNgayVe.Name = "dateTimePickerNgayVe";
-            this.dateTimePickerNgayVe.Size = new System.Drawing.Size(250, 30);
+            this.dateTimePickerNgayVe.Size = new System.Drawing.Size(250, 28);
             this.dateTimePickerNgayVe.TabIndex = 94;
             // 
             // labelNgayVe
@@ -263,34 +254,44 @@ namespace QTCSDLHD
             // 
             // comboBoxSoVeKH
             // 
+            this.comboBoxSoVeKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxSoVeKH.FormattingEnabled = true;
+            this.comboBoxSoVeKH.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
             this.comboBoxSoVeKH.Location = new System.Drawing.Point(1125, 43);
             this.comboBoxSoVeKH.Name = "comboBoxSoVeKH";
-            this.comboBoxSoVeKH.Size = new System.Drawing.Size(250, 33);
+            this.comboBoxSoVeKH.Size = new System.Drawing.Size(250, 30);
             this.comboBoxSoVeKH.TabIndex = 91;
             // 
             // dateTimePickerNgayDiKH
             // 
+            this.dateTimePickerNgayDiKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerNgayDiKH.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerNgayDiKH.Location = new System.Drawing.Point(573, 43);
             this.dateTimePickerNgayDiKH.Name = "dateTimePickerNgayDiKH";
-            this.dateTimePickerNgayDiKH.Size = new System.Drawing.Size(250, 30);
+            this.dateTimePickerNgayDiKH.Size = new System.Drawing.Size(250, 28);
             this.dateTimePickerNgayDiKH.TabIndex = 90;
             // 
             // comboBoxDiemDenKH
             // 
+            this.comboBoxDiemDenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDiemDenKH.FormattingEnabled = true;
             this.comboBoxDiemDenKH.Location = new System.Drawing.Point(299, 43);
             this.comboBoxDiemDenKH.Name = "comboBoxDiemDenKH";
-            this.comboBoxDiemDenKH.Size = new System.Drawing.Size(250, 33);
+            this.comboBoxDiemDenKH.Size = new System.Drawing.Size(250, 30);
             this.comboBoxDiemDenKH.TabIndex = 89;
             // 
             // comboBoxDiemDiKH
             // 
+            this.comboBoxDiemDiKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDiemDiKH.FormattingEnabled = true;
             this.comboBoxDiemDiKH.Location = new System.Drawing.Point(22, 43);
             this.comboBoxDiemDiKH.Name = "comboBoxDiemDiKH";
-            this.comboBoxDiemDiKH.Size = new System.Drawing.Size(250, 33);
+            this.comboBoxDiemDiKH.Size = new System.Drawing.Size(250, 30);
             this.comboBoxDiemDiKH.TabIndex = 88;
             // 
             // labelSoVeKH
@@ -333,127 +334,13 @@ namespace QTCSDLHD
             this.labelDiemDiKH.TabIndex = 84;
             this.labelDiemDiKH.Text = "Điểm đi";
             // 
-            // groupBoxBoLocTimKiem
-            // 
-            this.groupBoxBoLocTimKiem.Controls.Add(this.checkedListBoxTang);
-            this.groupBoxBoLocTimKiem.Controls.Add(this.checkedListBoxHangGhe);
-            this.groupBoxBoLocTimKiem.Controls.Add(this.checkedListBoxLoaiXe);
-            this.groupBoxBoLocTimKiem.Controls.Add(this.checkedListBoxGioDi);
-            this.groupBoxBoLocTimKiem.Controls.Add(this.labelTang);
-            this.groupBoxBoLocTimKiem.Controls.Add(this.labelHangGhe);
-            this.groupBoxBoLocTimKiem.Controls.Add(this.labelLoaiXe);
-            this.groupBoxBoLocTimKiem.Controls.Add(this.labelGioDi);
-            this.groupBoxBoLocTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxBoLocTimKiem.Location = new System.Drawing.Point(6, 240);
-            this.groupBoxBoLocTimKiem.Name = "groupBoxBoLocTimKiem";
-            this.groupBoxBoLocTimKiem.Size = new System.Drawing.Size(295, 410);
-            this.groupBoxBoLocTimKiem.TabIndex = 83;
-            this.groupBoxBoLocTimKiem.TabStop = false;
-            this.groupBoxBoLocTimKiem.Text = "BỘ LỌC TÌM KIẾM";
-            // 
-            // checkedListBoxTang
-            // 
-            this.checkedListBoxTang.BackColor = System.Drawing.SystemColors.Control;
-            this.checkedListBoxTang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBoxTang.FormattingEnabled = true;
-            this.checkedListBoxTang.Items.AddRange(new object[] {
-            "Tầng trên",
-            "Tầng dưới"});
-            this.checkedListBoxTang.Location = new System.Drawing.Point(0, 336);
-            this.checkedListBoxTang.Name = "checkedListBoxTang";
-            this.checkedListBoxTang.Size = new System.Drawing.Size(295, 73);
-            this.checkedListBoxTang.TabIndex = 92;
-            // 
-            // checkedListBoxHangGhe
-            // 
-            this.checkedListBoxHangGhe.BackColor = System.Drawing.SystemColors.Control;
-            this.checkedListBoxHangGhe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBoxHangGhe.FormattingEnabled = true;
-            this.checkedListBoxHangGhe.Items.AddRange(new object[] {
-            "Hàng đầu",
-            "Hàng giữa",
-            "Hàng cuối"});
-            this.checkedListBoxHangGhe.Location = new System.Drawing.Point(155, 210);
-            this.checkedListBoxHangGhe.Name = "checkedListBoxHangGhe";
-            this.checkedListBoxHangGhe.Size = new System.Drawing.Size(140, 96);
-            this.checkedListBoxHangGhe.TabIndex = 91;
-            // 
-            // checkedListBoxLoaiXe
-            // 
-            this.checkedListBoxLoaiXe.BackColor = System.Drawing.SystemColors.Control;
-            this.checkedListBoxLoaiXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBoxLoaiXe.FormattingEnabled = true;
-            this.checkedListBoxLoaiXe.Items.AddRange(new object[] {
-            "Ghế",
-            "Giường",
-            "Limousine"});
-            this.checkedListBoxLoaiXe.Location = new System.Drawing.Point(1, 210);
-            this.checkedListBoxLoaiXe.Name = "checkedListBoxLoaiXe";
-            this.checkedListBoxLoaiXe.Size = new System.Drawing.Size(148, 96);
-            this.checkedListBoxLoaiXe.TabIndex = 90;
-            // 
-            // checkedListBoxGioDi
-            // 
-            this.checkedListBoxGioDi.BackColor = System.Drawing.SystemColors.Control;
-            this.checkedListBoxGioDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBoxGioDi.FormattingEnabled = true;
-            this.checkedListBoxGioDi.Items.AddRange(new object[] {
-            "Sáng sớm 00:00 - 06:00",
-            "Buổi sáng 06:00 - 12:00",
-            "Buổi chiều 12:00 - 18:00",
-            "Buổi tối 18:00 - 24:00"});
-            this.checkedListBoxGioDi.Location = new System.Drawing.Point(1, 61);
-            this.checkedListBoxGioDi.Name = "checkedListBoxGioDi";
-            this.checkedListBoxGioDi.Size = new System.Drawing.Size(294, 119);
-            this.checkedListBoxGioDi.TabIndex = 0;
-            // 
-            // labelTang
-            // 
-            this.labelTang.AutoSize = true;
-            this.labelTang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTang.Location = new System.Drawing.Point(6, 310);
-            this.labelTang.Name = "labelTang";
-            this.labelTang.Size = new System.Drawing.Size(58, 25);
-            this.labelTang.TabIndex = 88;
-            this.labelTang.Text = "Tầng";
-            // 
-            // labelHangGhe
-            // 
-            this.labelHangGhe.AutoSize = true;
-            this.labelHangGhe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHangGhe.Location = new System.Drawing.Point(152, 184);
-            this.labelHangGhe.Name = "labelHangGhe";
-            this.labelHangGhe.Size = new System.Drawing.Size(97, 25);
-            this.labelHangGhe.TabIndex = 87;
-            this.labelHangGhe.Text = "Hàng ghế";
-            // 
-            // labelLoaiXe
-            // 
-            this.labelLoaiXe.AutoSize = true;
-            this.labelLoaiXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLoaiXe.Location = new System.Drawing.Point(6, 184);
-            this.labelLoaiXe.Name = "labelLoaiXe";
-            this.labelLoaiXe.Size = new System.Drawing.Size(75, 25);
-            this.labelLoaiXe.TabIndex = 86;
-            this.labelLoaiXe.Text = "Loại xe";
-            // 
-            // labelGioDi
-            // 
-            this.labelGioDi.AutoSize = true;
-            this.labelGioDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGioDi.Location = new System.Drawing.Point(6, 33);
-            this.labelGioDi.Name = "labelGioDi";
-            this.labelGioDi.Size = new System.Drawing.Size(62, 25);
-            this.labelGioDi.TabIndex = 85;
-            this.labelGioDi.Text = "Giờ đi";
-            // 
             // groupBoxDSChuyenXe
             // 
             this.groupBoxDSChuyenXe.Controls.Add(this.dataGridViewDSChuyenXe);
             this.groupBoxDSChuyenXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxDSChuyenXe.Location = new System.Drawing.Point(321, 239);
+            this.groupBoxDSChuyenXe.Location = new System.Drawing.Point(0, 239);
             this.groupBoxDSChuyenXe.Name = "groupBoxDSChuyenXe";
-            this.groupBoxDSChuyenXe.Size = new System.Drawing.Size(1090, 411);
+            this.groupBoxDSChuyenXe.Size = new System.Drawing.Size(1409, 411);
             this.groupBoxDSChuyenXe.TabIndex = 84;
             this.groupBoxDSChuyenXe.TabStop = false;
             this.groupBoxDSChuyenXe.Text = "Danh sách chuyến xe";
@@ -477,7 +364,7 @@ namespace QTCSDLHD
             this.dataGridViewDSChuyenXe.ReadOnly = true;
             this.dataGridViewDSChuyenXe.RowHeadersWidth = 51;
             this.dataGridViewDSChuyenXe.RowTemplate.Height = 24;
-            this.dataGridViewDSChuyenXe.Size = new System.Drawing.Size(1090, 380);
+            this.dataGridViewDSChuyenXe.Size = new System.Drawing.Size(1409, 380);
             this.dataGridViewDSChuyenXe.TabIndex = 0;
             this.dataGridViewDSChuyenXe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDSChuyenXe_CellContentClick);
             // 
@@ -570,7 +457,6 @@ namespace QTCSDLHD
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1411, 647);
             this.Controls.Add(this.groupBoxDSChuyenXe);
-            this.Controls.Add(this.groupBoxBoLocTimKiem);
             this.Controls.Add(this.tabControlMCKH);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TimChuyenXe";
@@ -581,8 +467,6 @@ namespace QTCSDLHD
             this.tabPageNgayDi.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.groupBoxBoLocTimKiem.ResumeLayout(false);
-            this.groupBoxBoLocTimKiem.PerformLayout();
             this.groupBoxDSChuyenXe.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDSChuyenXe)).EndInit();
             this.ResumeLayout(false);
@@ -613,15 +497,6 @@ namespace QTCSDLHD
         private System.Windows.Forms.Label labelNgayDiKH;
         private System.Windows.Forms.Label labelDiemDenKH;
         private System.Windows.Forms.Label labelDiemDiKH;
-        private System.Windows.Forms.GroupBox groupBoxBoLocTimKiem;
-        private System.Windows.Forms.CheckedListBox checkedListBoxGioDi;
-        private System.Windows.Forms.Label labelTang;
-        private System.Windows.Forms.Label labelHangGhe;
-        private System.Windows.Forms.Label labelLoaiXe;
-        private System.Windows.Forms.Label labelGioDi;
-        private System.Windows.Forms.CheckedListBox checkedListBoxTang;
-        private System.Windows.Forms.CheckedListBox checkedListBoxHangGhe;
-        private System.Windows.Forms.CheckedListBox checkedListBoxLoaiXe;
         private System.Windows.Forms.GroupBox groupBoxDSChuyenXe;
         private System.Windows.Forms.DataGridView dataGridViewDSChuyenXe;
         private System.Windows.Forms.DataGridViewTextBoxColumn mactcx;
