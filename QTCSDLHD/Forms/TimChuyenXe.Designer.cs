@@ -41,7 +41,7 @@ namespace QTCSDLHD
             this.labelDiemDen = new System.Windows.Forms.Label();
             this.labelDiemDi = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dateTimePickerNgayVe = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerNgayVeKH = new System.Windows.Forms.DateTimePicker();
             this.labelNgayVe = new System.Windows.Forms.Label();
             this.buttonTimChuyenXeKH = new System.Windows.Forms.Button();
             this.comboBoxSoVeKH = new System.Windows.Forms.ComboBox();
@@ -201,7 +201,7 @@ namespace QTCSDLHD
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.dateTimePickerNgayVe);
+            this.tabPage2.Controls.Add(this.dateTimePickerNgayVeKH);
             this.tabPage2.Controls.Add(this.labelNgayVe);
             this.tabPage2.Controls.Add(this.buttonTimChuyenXeKH);
             this.tabPage2.Controls.Add(this.comboBoxSoVeKH);
@@ -220,14 +220,14 @@ namespace QTCSDLHD
             this.tabPage2.Text = "Khứ hồi";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // dateTimePickerNgayVe
+            // dateTimePickerNgayVeKH
             // 
-            this.dateTimePickerNgayVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerNgayVe.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerNgayVe.Location = new System.Drawing.Point(850, 43);
-            this.dateTimePickerNgayVe.Name = "dateTimePickerNgayVe";
-            this.dateTimePickerNgayVe.Size = new System.Drawing.Size(250, 28);
-            this.dateTimePickerNgayVe.TabIndex = 94;
+            this.dateTimePickerNgayVeKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerNgayVeKH.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerNgayVeKH.Location = new System.Drawing.Point(850, 43);
+            this.dateTimePickerNgayVeKH.Name = "dateTimePickerNgayVeKH";
+            this.dateTimePickerNgayVeKH.Size = new System.Drawing.Size(250, 28);
+            this.dateTimePickerNgayVeKH.TabIndex = 94;
             // 
             // labelNgayVe
             // 
@@ -486,7 +486,7 @@ namespace QTCSDLHD
         private System.Windows.Forms.DateTimePicker dateTimePickerNgayDi;
         private System.Windows.Forms.ComboBox comboBoxSoVe;
         private System.Windows.Forms.Button buttonTimChuyenXe;
-        private System.Windows.Forms.DateTimePicker dateTimePickerNgayVe;
+        private System.Windows.Forms.DateTimePicker dateTimePickerNgayVeKH;
         private System.Windows.Forms.Label labelNgayVe;
         private System.Windows.Forms.Button buttonTimChuyenXeKH;
         private System.Windows.Forms.ComboBox comboBoxSoVeKH;

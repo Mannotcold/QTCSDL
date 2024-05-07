@@ -92,7 +92,7 @@ namespace QTCSDLHD
         private void buttonTimChuyenXeKH_Click(object sender, EventArgs e)
         {
             Stopwatch stopwatch = Stopwatch.StartNew();
-            List<object> list = control.loadListChuyenXeKH(comboBoxDiemDen.SelectedValue.ToString(), comboBoxDiemDi.SelectedValue.ToString(), dateTimePickerNgayDi.Value.ToString("yyyy-MM-dd"), dateTimePickerNgayVe.Value.ToString("yyyy-MM-dd"));
+            List<object> list = control.loadListChuyenXeKH(comboBoxDiemDenKH.SelectedValue.ToString(), comboBoxDiemDiKH.SelectedValue.ToString(), dateTimePickerNgayDiKH.Value.ToString("yyyy-MM-dd"), dateTimePickerNgayVeKH.Value.ToString("yyyy-MM-dd"));
             dataGridViewDSChuyenXe.DataSource = list;
             groupBoxDSChuyenXe.Visible = true;
             stopwatch.Stop();
