@@ -50,12 +50,12 @@ namespace QTCSDLHD
         }
         private void Menu_Load(object sender, EventArgs e)
         {
-            //openChildForm(new TimChuyenXe());
+            openChildForm(new TimChuyenXe());
         }
 
         private void btntc_Click(object sender, EventArgs e)
         {
-            //openChildForm(new TimChuyenXe());
+            openChildForm(new TimChuyenXe());
         }
 
         private void btnhd_Click(object sender, EventArgs e)
